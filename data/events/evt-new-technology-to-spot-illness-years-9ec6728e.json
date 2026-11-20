@@ -1,0 +1,38 @@
+{
+  "appearances": [
+    "2026-W47"
+  ],
+  "dates": {
+    "consultation_deadline": null,
+    "discovered": "2026-11-20",
+    "effective": null,
+    "published": "2026-11-06",
+    "updated": null
+  },
+  "doc_type": "announcement",
+  "editorial_status": "pending",
+  "id": "evt-new-technology-to-spot-illness-years-9ec6728e",
+  "merged_from": [],
+  "org_type": "funder",
+  "organization": "UK Research and Innovation (UKRI)",
+  "policy_id": null,
+  "region": "Europe",
+  "slug": "new-technology-to-spot-illness-years-9ec6728e",
+  "sources": [
+    {
+      "kind": "primary",
+      "label": "UK Research and Innovation (UKRI)",
+      "source_id": "ukri",
+      "url": "https://www.ukri.org/news/new-technology-to-spot-illness-years-earlier-gets-ukri-backing/"
+    }
+  ],
+  "status": "new",
+  "supersedes": null,
+  "title": "New technology to spot illness years earlier gets UKRI backing",
+  "topics": [
+    "oa-policy"
+  ],
+  "verified": false,
+  "what_changed": "Pending editorial review. UK Research and Innovation (UKRI) title: \"New technology to spot illness years earlier gets UKRI backing\". People across the UK could soon benefit from apps that listen to coughs, an AI wellbeing coach to manage heart disease and routine eye scans that detect diabetes. EPSRC (Auto-stub; verify against the source before publishing.)",
+  "why_it_matters": "Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+}

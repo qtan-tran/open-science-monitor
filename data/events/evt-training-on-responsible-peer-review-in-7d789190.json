@@ -1,0 +1,38 @@
+{
+  "appearances": [
+    "2026-W47"
+  ],
+  "dates": {
+    "consultation_deadline": null,
+    "discovered": "2026-11-20",
+    "effective": null,
+    "published": "2026-11-09",
+    "updated": null
+  },
+  "doc_type": "announcement",
+  "editorial_status": "pending",
+  "id": "evt-training-on-responsible-peer-review-in-7d789190",
+  "merged_from": [],
+  "org_type": "library-association",
+  "organization": "EIFL (Electronic Information for Libraries)",
+  "policy_id": null,
+  "region": "Global",
+  "slug": "training-on-responsible-peer-review-in-7d789190",
+  "sources": [
+    {
+      "kind": "primary",
+      "label": "EIFL (Electronic Information for Libraries)",
+      "source_id": "eifl",
+      "url": "https://www.eifl.net/events/training-responsible-peer-review-slovenia"
+    }
+  ],
+  "status": "new",
+  "supersedes": null,
+  "title": "Training on responsible peer review in Slovenia",
+  "topics": [
+    "research-data"
+  ],
+  "verified": false,
+  "what_changed": "Pending editorial review. EIFL (Electronic Information for Libraries) title: \"Training on responsible peer review in Slovenia\". Milica Ševkušić, Project Coordinator in the EIFL Open Access Programme, will contribute to two workshops on responsible peer review of research publications and research data in Slovenia. (Auto-stub; verify against the source before publishing.)",
+  "why_it_matters": "Pending editorial review. Editorial relevance from EIFL (Electronic Information for Libraries) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+}

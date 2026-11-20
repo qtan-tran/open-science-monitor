@@ -1,0 +1,329 @@
+{
+  "id": "2026-W47",
+  "week_start": "2026-11-16",
+  "generated_at": "2026-11-20T12:25:05.658Z",
+  "status": "draft",
+  "summary": "26 item(s) cleared the relevance gate. Editorial review pending.",
+  "signal": "",
+  "headline_event": "evt-asapbio-november-community-call-informing-dora-879fcc96",
+  "items": [
+    "evt-asapbio-november-community-call-informing-dora-879fcc96",
+    "evt-coar-launches-retractions-task-force-40eee90d",
+    "evt-financial-sustainability-planning-toolkit-for-diamond-c18182f2",
+    "evt-interim-progress-report-on-a-beyond-c8527f81",
+    "evt-no-fee-oa-publishing-in-africa-66197e1b",
+    "evt-prereview-roundtable-beyond-visibility-how-do-6caebb56",
+    "evt-research-data-management-training-at-the-e44db1f2",
+    "evt-the-way-forward-for-copyright-research-00972a86",
+    "evt-training-on-responsible-peer-review-in-7d789190",
+    "evt-six-narratives-about-the-true-value-c82324d5",
+    "evt-15-million-boost-for-outstanding-new-04912cb8",
+    "evt-celebrating-10-years-of-the-francis-a38ca700",
+    "evt-central-laser-facility-partners-with-first-fb5c624c",
+    "evt-charging-towards-the-battery-electric-future-2ace0333",
+    "evt-construction-begins-on-giant-underground-neutrino-1ca79aa4",
+    "evt-early-career-scientists-awarded-prestigious-fellowships-174834e4",
+    "evt-first-of-a-kind-rail-projects-f20506a2",
+    "evt-funding-tomorrow-s-medicines-manufacturing-labs-555e5a95",
+    "evt-how-the-uk-built-a-quantum-a43d68c0",
+    "evt-more-businesses-to-benefit-from-critical-6682e8ad",
+    "evt-new-policy-fellowships-for-the-regions-f6f225e0",
+    "evt-new-technology-to-spot-illness-years-9ec6728e",
+    "evt-preferred-candidate-named-for-research-england-36746fc7",
+    "evt-sparc-welcomes-katya-mueller-as-visiting-d889b567",
+    "evt-stfc-software-reveals-how-spinal-discs-be5ec58e",
+    "evt-ukri-invests-in-20-turing-ai-835350f5"
+  ],
+  "counts": {
+    "items": 26,
+    "candidates": 44,
+    "sources_checked": 18,
+    "sources_failed": 1
+  },
+  "run_report": {
+    "cutoff": "2026-11-20T07:30:00.000Z",
+    "horizon_from": "2026-11-06T08:30:00+01:00",
+    "sources_checked": 18,
+    "sources_failed": 1,
+    "failures": [
+      {
+        "id": "oaspa",
+        "error": "HTTP 403 Forbidden"
+      }
+    ],
+    "sources": [
+      {
+        "id": "nsf",
+        "ok": true,
+        "new_candidates": 15
+      },
+      {
+        "id": "anr",
+        "ok": true,
+        "new_candidates": 0
+      },
+      {
+        "id": "coar",
+        "ok": true,
+        "new_candidates": 10
+      },
+      {
+        "id": "ukri",
+        "ok": true,
+        "new_candidates": 20
+      },
+      {
+        "id": "doaj",
+        "ok": true,
+        "new_candidates": 10
+      },
+      {
+        "id": "eosc",
+        "ok": true,
+        "new_candidates": 0
+      },
+      {
+        "id": "fapesp",
+        "ok": true,
+        "new_candidates": 0
+      },
+      {
+        "id": "dora",
+        "ok": true,
+        "new_candidates": 10
+      },
+      {
+        "id": "sparc",
+        "ok": true,
+        "new_candidates": 10
+      },
+      {
+        "id": "oaspa",
+        "ok": false,
+        "new_candidates": 0,
+        "error": "HTTP 403 Forbidden"
+      },
+      {
+        "id": "scielo",
+        "ok": true,
+        "new_candidates": 10
+      },
+      {
+        "id": "force11",
+        "ok": true,
+        "new_candidates": 0
+      },
+      {
+        "id": "coalition-s",
+        "ok": true,
+        "new_candidates": 10
+      },
+      {
+        "id": "twas",
+        "ok": true,
+        "new_candidates": 10
+      },
+      {
+        "id": "clacso",
+        "ok": true,
+        "new_candidates": 10
+      },
+      {
+        "id": "surf",
+        "ok": true,
+        "new_candidates": 15
+      },
+      {
+        "id": "eifl",
+        "ok": true,
+        "new_candidates": 10
+      },
+      {
+        "id": "ardc",
+        "ok": true,
+        "new_candidates": 0
+      }
+    ],
+    "notes": [],
+    "llm_assisted": false,
+    "not_shortlisted": [
+      {
+        "title": "Listening to the landscape: My six-year journey as DOAJ Ambassador for Latin America",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Applying to be indexed in DOAJ? Start with us",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Referência não encontrada não é referência inventada: a verificação automática e a literatura latino-americana",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Christian Ferrer (1960-2026)",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Día Universal del Niño y de la Niña 2026",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Convocatoria a equipos docentes para la presentación de Diplomas Superiores 2027",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Convenio Marco de Colaboración de CLACSO y la SEBIEN de México",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Violencias, Juventudes y reexistencias de los feminismos de hoy",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Desafíos, oportunidades y derechos humanos en la era digital",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Colaboración entre CLACSO y la Asociación Brasileira de Ciencia Política",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Honduras frente a El Niño: cuidar en tiempos de crisis climática",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "El ataque al periodismo independiente es un ataque a la democracia",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Convocatoria a equipos docentes para la presentación de Seminarios Virtuales 2027",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Update DPIA: Xedule zet grote stappen",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "SURF Onderwijsaward naar Marieke van Osch: “Zij verbindt landelijke AI-ontwikkelingen én onderwijs met elkaar”",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Open science trainers meet-up",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "2nd Annual International SARUA Conference 2026",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Training for research and higher education managers of Ukraine",
+        "reason": "no topical match in the relevance filter (below threshold)"
+      },
+      {
+        "title": "Podcast: The laser that could break the laws of physics",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Podcast: The future of electronics goes beyond circuit boards",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "New dwarf planet candidate discovered by NSF–DOE Rubin Observatory",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Podcast: Can America's most powerful laser unlock the universe?",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Podcast: The hidden DNA code that controls your genes",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "NSF lays the foundation for the next generation of technologies and support for American talent",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "NSF–UKRI metascience statement",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Podcast: Could holographic 3D printing be real?",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Podcast: New quantum-enabled materials",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Podcast: Can prosthetic limbs feel touch? (haptic feedback)",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "NSF invests in translating low-dimensional semiconductor technologies to establish U.S. leadership in microelectronics",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "NSF announces 3 additional topics as part of the NSF X-Labs initiative to pursue generational breakthrough science and technology efforts",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Podcast: Creating thermal cloaking and new structures",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "NSF launches $20M pilot to accelerate commercialization of promising deep technologies from small businesses",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "NSF leadership in a new golden age of science",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Survey on Repository Metadata Collection and Curation Practices",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Launch of Publish, Review, Curate (PRC) Alliance: A coalition of stakeholders to foster a researcher-centred model for scholarly publishing",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Outcomes of the COAR Annual Conference 2026",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Publish, Review, Curate (PRC) Webinar – May 25, 2026",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Navigating the Uneasy Interdependence of AI and Open Science",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "COAR Notify and the Launch of a Publish, Review, Curate Alliance",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Mitigating the impact of AI bots",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Reimagining scholarly publishing: outcomes from a public forum to discuss the Publish, Review, Curate publishing model",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Research England launches consultation on future of HEIF formula",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "UKRI launches faster, easier-to-use Gateway to Research",
+        "reason": "older publication surfaced only now; before the collection window"
+      }
+    ]
+  },
+  "paths": {
+    "markdown": "issues/2026-W47/index.md",
+    "html": "issues/2026-W47/index.html",
+    "substack": "issues/2026-W47/substack.md"
+  }
+}
