@@ -1,0 +1,33 @@
+{
+  "id": "pol-eosc",
+  "name": "European Open Science Cloud (EOSC) beyond 2027",
+  "organization": "European Commission, LIBER, EUA and partners",
+  "region": "Europe",
+  "type": "program",
+  "description": "Governance and funding of the European Open Science Cloud after the current framework period: whether EOSC continues as a distinct, Work Programme-based European Partnership under FP10, how the Federation of nodes operates, and which institutions are recognised as supporting infrastructure.",
+  "milestones": [
+    {
+      "status": "operational",
+      "date": "2026-10-16",
+      "label": "First 13 EOSC Nodes begin operating; 27 more joining in two waves",
+      "source": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/europe-expands-access-sharing-and-use-research-data-and-digital-services-through-first-13-open-2026-10-16_en",
+      "verified": false
+    },
+    {
+      "status": "consultation",
+      "date": "2026-10-13",
+      "label": "LIBER position: libraries as EOSC supporting infrastructure, distinct partnership under FP10",
+      "source": "https://doi.org/10.5281/zenodo.23336117",
+      "verified": false
+    },
+    {
+      "status": "consultation",
+      "date": "2026-10-20",
+      "label": "EUA position: EOSC remains a distinct, research-focused partnership with its own work programme",
+      "source": "https://www.eua.eu/news/eua-news/european-partnerships-horizon-europe-funding-for-joint-undertakings-must-focus-on-research.html",
+      "verified": false
+    }
+  ],
+  "verified": false,
+  "sample": true
+}

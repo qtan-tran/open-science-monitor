@@ -1,0 +1,40 @@
+{
+  "id": "evt-ore-11-countries",
+  "slug": "ore-11-countries",
+  "title": "Open Research Europe opens to researchers across eleven countries",
+  "organization": "European Commission, DFG and participating organisations",
+  "org_type": "funder",
+  "region": "Europe",
+  "country": null,
+  "topics": ["infrastructure", "diamond-oa", "business-models"],
+  "doc_type": "announcement",
+  "status": "new",
+  "policy_id": "pol-ore",
+  "dates": {
+    "published": "2026-11-02",
+    "updated": null,
+    "effective": "2026-11-02",
+    "consultation_deadline": null,
+    "discovered": "2026-11-06"
+  },
+  "sources": [
+    {
+      "label": "DFG announcement",
+      "url": "https://www.dfg.de/en/service/press/press-releases/2026/press-release-no-43",
+      "kind": "primary"
+    },
+    {
+      "label": "European Commission announcement",
+      "url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/eligibility-publish-open-research-europe-without-fees-expands-researchers-11-countries-2026-11-03_en",
+      "kind": "primary"
+    }
+  ],
+  "what_changed": "Open Research Europe has moved from preparation to operation. Researchers affiliated with institutions in eleven participating countries, including Germany, can now submit without either EU-project funding or author fees. The platform accepts articles, registered reports, data notes, case studies, and essays, using a Publish-Review-Curate model with public reviews. CERN operates the service.",
+  "why_it_matters": "This is a substantial implementation experiment in collectively financed, fee-free European publishing. Sixteen funders and research organisations plus the Commission have committed nearly EUR 17 million for 2026-2031, including up to EUR 10 million from the Commission. For Germany, country-level participation effectively creates a national publishing entitlement independent of individual DFG funding.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W45"],
+  "verified": true,
+  "sample": true
+}

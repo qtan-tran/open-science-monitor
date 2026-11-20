@@ -1,0 +1,35 @@
+{
+  "id": "evt-openaire-dora-ra",
+  "slug": "openaire-dora-ra",
+  "title": "Making Responsible Research Assessment Work through Scholarly Communication and Open Infrastructures",
+  "organization": "OpenAIRE",
+  "org_type": "infrastructure",
+  "region": "Global",
+  "country": null,
+  "topics": ["research-assessment", "infrastructure"],
+  "doc_type": "analysis",
+  "status": "new",
+  "policy_id": "pol-rra",
+  "dates": {
+    "published": "2026-11-02",
+    "updated": null,
+    "effective": null,
+    "consultation_deadline": null,
+    "discovered": "2026-11-06"
+  },
+  "sources": [
+    {
+      "label": "OpenAIRE analysis",
+      "url": "https://www.openaire.eu/community/blogs/making-responsible-research-assessment-work-through-scholarly-communication-and-open-infrastructures",
+      "kind": "primary"
+    }
+  ],
+  "what_changed": "Drawing on an OpenAIRE-DORA consultation, the analysis identifies implementation needs for DORA's forthcoming guide to responsible assessment in scholarly communication. Participants emphasised changes to doctoral and selection committees, recognition of data, software and metadata, shared training for academic leaders and support staff, and alignment between editorial policy, infrastructure, and evaluation criteria.",
+  "why_it_matters": "Its strongest point is that infrastructure cannot reform assessment by itself. Greater visibility of diverse outputs matters only when committees change their criteria and routines; formal institutional policies can otherwise coexist with continuing reliance on journal brands and citation counts.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W45"],
+  "verified": true,
+  "sample": true
+}

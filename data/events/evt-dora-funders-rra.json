@@ -1,0 +1,35 @@
+{
+  "id": "evt-dora-funders-rra",
+  "slug": "dora-funders-rra",
+  "title": "Aligning Research Assessment, Scholarly Communication, and Open Infrastructure: Funders' Perspectives",
+  "organization": "DORA Funder Community of Practice",
+  "org_type": "initiative",
+  "region": "Global",
+  "country": null,
+  "topics": ["research-assessment", "indigenous-data", "research-evidence"],
+  "doc_type": "analysis",
+  "status": "new",
+  "policy_id": "pol-rra",
+  "dates": {
+    "published": "2026-10-14",
+    "updated": null,
+    "effective": null,
+    "consultation_deadline": null,
+    "discovered": "2026-10-16"
+  },
+  "sources": [
+    {
+      "label": "DORA analysis",
+      "url": "https://sfdora.org/2026/10/14/funders-rra-scholarly-communication-open-infrastructure/",
+      "kind": "primary"
+    }
+  ],
+  "what_changed": "Discussions involving funders and the Barcelona Declaration initiative connect responsible assessment to open funding metadata. Proposed actions include persistent grant identifiers, open grant metadata through APIs, standardised funding acknowledgements, and automated validation across funder and publisher systems. A readiness survey covers 39 funders in 27 countries.",
+  "why_it_matters": "The analysis usefully distinguishes technical openness from responsible assessment: collecting more interoperable metadata does not itself prevent reductive metrics. It also identifies practical barriers, including staff capacity, standardisation, legacy systems, and tensions between individual-attribution metadata and Indigenous collective governance.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W42"],
+  "verified": true,
+  "sample": true
+}

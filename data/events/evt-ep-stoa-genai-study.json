@@ -1,0 +1,40 @@
+{
+  "id": "evt-ep-stoa-genai-study",
+  "slug": "ep-stoa-genai-study",
+  "title": "Open Science and the Effects of Generative Artificial Intelligence in Scientific Exchange",
+  "organization": "European Parliament STOA / EPRS",
+  "org_type": "government",
+  "region": "Europe",
+  "country": null,
+  "topics": ["oa-policy", "research-evidence", "multilingualism"],
+  "doc_type": "study",
+  "status": "new",
+  "policy_id": null,
+  "dates": {
+    "published": "2026-10-19",
+    "updated": null,
+    "effective": null,
+    "consultation_deadline": null,
+    "discovered": "2026-10-23"
+  },
+  "sources": [
+    {
+      "label": "Full study (EPRS PDF)",
+      "url": "https://www.europarl.europa.eu/RegData/etudes/STUD/2026/788151/EPRS_STU%282026%29788151_EN.pdf",
+      "kind": "primary"
+    },
+    {
+      "label": "Official ERA summary",
+      "url": "https://era.gv.at/news-items/stoa-presents-report-on-open-science-and-the-effects-of-generative-artificial-intelligence-in-scientific-exchange/",
+      "kind": "secondary"
+    }
+  ],
+  "what_changed": "The report evaluates how generative AI could either strengthen accessibility, multilingual exchange, and discoverability or undermine Open Science through obscured provenance, infrastructure dependency, unequal capabilities, and \"synthetic overload\": more generated content than researchers and systems can reliably verify.",
+  "why_it_matters": "Its policy options treat scientific exchange as public-interest infrastructure. Openness is reformulated as a combination of accessibility, provenance, reproducibility, inclusion, skills, and institutional capacity, not merely unrestricted availability. It provides a timely European policy vocabulary connecting Open Science, AI-mediated publishing, research integrity, and infrastructure governance.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W43"],
+  "verified": true,
+  "sample": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "pol-diamond-eu",
+  "name": "Diamond OA funding strategies in Europe",
+  "organization": "ALMASI project and contributing institutions (Slovenia, ANR, TU Delft, Université de Lorraine, TIB, SCOSS)",
+  "region": "Europe",
+  "type": "initiative",
+  "description": "How European funders, universities and libraries can finance Diamond OA publishing: national policies, library portfolio funding, consortial models such as TIB's KOALA, and internationally coordinated support through SCOSS.",
+  "milestones": [
+    {
+      "status": "consultation",
+      "date": "2026-10-12",
+      "label": "Diamond OA Policy Forum Europe publishes six funding-approach slide decks",
+      "source": "https://doi.org/10.5281/zenodo.23301451",
+      "verified": false
+    }
+  ],
+  "verified": false,
+  "sample": true
+}

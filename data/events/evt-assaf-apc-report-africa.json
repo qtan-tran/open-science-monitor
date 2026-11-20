@@ -1,0 +1,36 @@
+{
+  "id": "evt-assaf-apc-report-africa",
+  "slug": "assaf-apc-report-africa",
+  "title": "Open Access Scholarly Publishing and Article Processing Charges: Perspectives and Experiences of Researchers from Africa",
+  "organization": "Academy of Science of South Africa (ASSAf)",
+  "org_type": "academy",
+  "region": "Africa",
+  "country": "South Africa",
+  "topics": ["apc-bpc", "diamond-oa", "equity", "research-evidence"],
+  "doc_type": "report",
+  "status": "new",
+  "policy_id": null,
+  "dates": {
+    "published": "2026-09-02",
+    "updated": null,
+    "effective": null,
+    "consultation_deadline": null,
+    "discovered": "2026-10-16"
+  },
+  "sources": [
+    {
+      "label": "Full report and repository record (DOI)",
+      "url": "https://doi.org/10.17159/assaf.2026/127",
+      "kind": "primary"
+    }
+  ],
+  "what_changed": "Based on responses from 761 researchers across Africa, the report examines how APCs, journal prestige, institutional support, and knowledge of OA routes affect publication choices. It finds substantial interest in Diamond OA but persistent problems with visibility, infrastructure, sustainability, and recognition in evaluation systems. The report was first published on 2 September and formally highlighted by ASSAf on 15 October 2026.",
+  "why_it_matters": "Its central conclusion is analytically useful: the problem is not open access itself but how open access is financed and embedded in research assessment. It provides comparative evidence connecting author-level journal selection to APC inequalities and prestige incentives, directly relevant to interviews and policy design on author behaviour in Africa.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W42"],
+  "verified": true,
+  "sample": true,
+  "note": "Resurfacing announcement rather than a new publication: the underlying report dates from 2 September 2026."
+}

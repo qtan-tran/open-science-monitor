@@ -1,0 +1,40 @@
+{
+  "id": "evt-coara-erip-outputs",
+  "slug": "coara-erip-outputs",
+  "title": "CoARA ERIP Outputs on Ethical Research Assessment in Data and AI",
+  "organization": "CoARA Working Group on Ethics and Research Integrity Policy",
+  "org_type": "initiative",
+  "region": "Global",
+  "country": null,
+  "topics": ["research-assessment", "research-evidence"],
+  "doc_type": "report",
+  "status": "new",
+  "policy_id": "pol-rra",
+  "dates": {
+    "published": "2026-09-29",
+    "updated": "2026-10-20",
+    "effective": null,
+    "consultation_deadline": null,
+    "discovered": "2026-10-23"
+  },
+  "sources": [
+    {
+      "label": "Output register and overview",
+      "url": "https://www.coara.org/working-groups/wg-erip/",
+      "kind": "primary"
+    },
+    {
+      "label": "Self-evaluation toolkit (DOI)",
+      "url": "https://doi.org/10.5281/zenodo.23025516",
+      "kind": "primary"
+    }
+  ],
+  "what_changed": "CoARA has consolidated a large implementation package: an ethical policy framework, a framework for evaluating digital contributions, methodological guidance, a handbook, controlled vocabulary and ontology, tool review, a Modular Assessment Configurator protocol, and five self-evaluation instruments. The consolidation and clarification of endorsement status is dated 20 October 2026.",
+  "why_it_matters": "The package attempts to turn high-level responsible-assessment principles into organisational diagnostics and configurable procedures. The Observatory and self-evaluation toolkit have been submitted for formal CoARA endorsement as actionable policy resources. The underlying records predate the briefing period; what is new is the 20 October consolidation.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W43"],
+  "verified": true,
+  "sample": true
+}

@@ -1,0 +1,40 @@
+{
+  "id": "pol-rra",
+  "name": "Responsible research assessment reform (DORA / CoARA ecosystem)",
+  "organization": "DORA, CoARA and national reform initiatives",
+  "region": "Global",
+  "type": "initiative",
+  "description": "Cross-cutting thread on making research assessment responsible: funder communities of practice, CoARA working-group outputs, national implementation efforts and the role of scholarly communication infrastructure in reform.",
+  "milestones": [
+    {
+      "status": "consultation",
+      "date": "2026-10-14",
+      "label": "DORA Funder Community of Practice analysis: open funding metadata and responsible assessment",
+      "source": "https://sfdora.org/2026/10/14/funders-rra-scholarly-communication-open-infrastructure/",
+      "verified": false
+    },
+    {
+      "status": "revised",
+      "date": "2026-10-20",
+      "label": "CoARA ERIP implementation package consolidated; endorsement status clarified",
+      "source": "https://www.coara.org/working-groups/wg-erip/",
+      "verified": false
+    },
+    {
+      "status": "consultation",
+      "date": "2026-10-28",
+      "label": "Swiss SYOS panel: implementation frictions of responsible assessment in Switzerland",
+      "source": "https://yearofscientometrics.ethz.ch/reflecting-on-the-challenges-of-responsible-research-assessment-insights-from-the-syos-panel-discussion/",
+      "verified": false
+    },
+    {
+      "status": "consultation",
+      "date": "2026-11-02",
+      "label": "OpenAIRE-DORA consultation: implementation needs for DORA's forthcoming guide for scholarly communication",
+      "source": "https://www.openaire.eu/community/blogs/making-responsible-research-assessment-work-through-scholarly-communication-and-open-infrastructures",
+      "verified": false
+    }
+  ],
+  "verified": false,
+  "sample": true
+}

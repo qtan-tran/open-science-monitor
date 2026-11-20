@@ -1,0 +1,35 @@
+{
+  "id": "evt-eua-partnerships-eosc",
+  "slug": "eua-partnerships-eosc",
+  "title": "European Partnerships: Horizon Europe Funding for Joint Undertakings Must Focus on Research",
+  "organization": "European University Association (EUA)",
+  "org_type": "university",
+  "region": "Europe",
+  "country": null,
+  "topics": ["infrastructure", "funder-mandates"],
+  "doc_type": "position",
+  "status": "new",
+  "policy_id": "pol-eosc",
+  "dates": {
+    "published": "2026-10-20",
+    "updated": null,
+    "effective": null,
+    "consultation_deadline": null,
+    "discovered": "2026-10-23"
+  },
+  "sources": [
+    {
+      "label": "EUA policy input",
+      "url": "https://www.eua.eu/news/eua-news/european-partnerships-horizon-europe-funding-for-joint-undertakings-must-focus-on-research.html",
+      "kind": "primary"
+    }
+  ],
+  "what_changed": "Responding to the design of European Partnerships under FP10, EUA calls for EOSC to remain a distinct partnership with its own work programme. It characterises EOSC as a collectively funded, community-owned research commons connecting distributed resources while preserving national and institutional ownership.",
+  "why_it_matters": "Following the LIBER position, this shows convergence between libraries and universities around a specific post-2027 governance model. It also places Open Science infrastructure inside the broader contest over whether FP10 funding should prioritise open collaborative research or industrial deployment.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W43"],
+  "verified": true,
+  "sample": true
+}

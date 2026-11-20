@@ -1,0 +1,26 @@
+{
+  "id": "pol-nih-pub-costs",
+  "name": "NIH consultation on restricting grant funds for publication costs",
+  "organization": "US National Institutes of Health (Office of Science Policy)",
+  "region": "North America",
+  "type": "policy",
+  "description": "NIH ran a public consultation on restricting the use of grant funds for publication costs (APCs). The compiled responses provide unusually rich evidence on how cost-control options land across the research system.",
+  "milestones": [
+    {
+      "status": "consultation",
+      "date": null,
+      "label": "Public consultation on restricting allowable publication costs (compiled comments released; exact consultation window not yet verified)",
+      "source": "https://osp.od.nih.gov/get-involved/previously-released-compiled-public-comments/",
+      "verified": false
+    },
+    {
+      "status": "revised",
+      "date": "2026-11-05",
+      "label": "Independent analysis of all 914 public comments published (Health Affairs Scholar)",
+      "source": "https://doi.org/10.1093/haschl/qxag163",
+      "verified": false
+    }
+  ],
+  "verified": false,
+  "sample": true
+}

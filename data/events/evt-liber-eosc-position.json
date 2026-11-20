@@ -1,0 +1,35 @@
+{
+  "id": "evt-liber-eosc-position",
+  "slug": "liber-eosc-position",
+  "title": "LIBER Position on the Future of the European Open Science Cloud",
+  "organization": "LIBER (Association of European Research Libraries)",
+  "org_type": "library-association",
+  "region": "Europe",
+  "country": null,
+  "topics": ["infrastructure", "oa-policy", "funder-mandates"],
+  "doc_type": "position",
+  "status": "new",
+  "policy_id": "pol-eosc",
+  "dates": {
+    "published": "2026-10-13",
+    "updated": null,
+    "effective": null,
+    "consultation_deadline": null,
+    "discovered": "2026-10-16"
+  },
+  "sources": [
+    {
+      "label": "Position paper (DOI)",
+      "url": "https://doi.org/10.5281/zenodo.23336117",
+      "kind": "primary"
+    }
+  ],
+  "what_changed": "LIBER proposes maintaining EOSC beyond 2027 as a distinct, Work Programme-based European Partnership under FP10. It asks that research libraries be recognised as EOSC supporting infrastructure, included in governance and implementation, and made directly eligible in future funding calls.",
+  "why_it_matters": "The paper identifies an institutional \"last-mile\" problem: European infrastructure may exist technically without organisations capable of integrating it into everyday research practice. Its proposed solution assigns libraries a formal intermediary role rather than treating them merely as service users.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W42"],
+  "verified": true,
+  "sample": true
+}

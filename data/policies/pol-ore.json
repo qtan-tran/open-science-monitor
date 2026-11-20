@@ -1,0 +1,26 @@
+{
+  "id": "pol-ore",
+  "name": "Open Research Europe platform expansion",
+  "organization": "European Commission, DFG and participating funders",
+  "region": "Europe",
+  "type": "platform",
+  "description": "The Commission's collectively financed, fee-free open publishing platform and how eligibility expands beyond EU-project beneficiaries to national participation. CERN operates the service with a Publish-Review-Curate model.",
+  "milestones": [
+    {
+      "status": "operational",
+      "date": "2026-10-19",
+      "label": "DFG announces Open Research Europe scientific advisory board (implementation update)",
+      "source": "https://www.dfg.de/en/service/press/press_releases/",
+      "verified": false
+    },
+    {
+      "status": "in force",
+      "date": "2026-11-02",
+      "label": "Fee-free eligibility extends to researchers at institutions in eleven participating countries, including Germany",
+      "source": "https://www.dfg.de/en/service/press/press-releases/2026/press-release-no-43",
+      "verified": false
+    }
+  ],
+  "verified": false,
+  "sample": true
+}

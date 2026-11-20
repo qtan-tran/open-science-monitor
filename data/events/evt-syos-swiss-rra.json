@@ -1,0 +1,35 @@
+{
+  "id": "evt-syos-swiss-rra",
+  "slug": "syos-swiss-rra",
+  "title": "Reflecting on the challenges of responsible research assessment: insights from the SYOS panel discussion",
+  "organization": "Swiss Year of Scientometrics / ETH Library",
+  "org_type": "university",
+  "region": "Europe",
+  "country": "Switzerland",
+  "topics": ["research-assessment", "research-evidence"],
+  "doc_type": "analysis",
+  "status": "new",
+  "policy_id": "pol-rra",
+  "dates": {
+    "published": "2026-10-28",
+    "updated": null,
+    "effective": null,
+    "consultation_deadline": null,
+    "discovered": "2026-10-30"
+  },
+  "sources": [
+    {
+      "label": "SYOS panel synthesis",
+      "url": "https://yearofscientometrics.ethz.ch/reflecting-on-the-challenges-of-responsible-research-assessment-insights-from-the-syos-panel-discussion/",
+      "kind": "primary"
+    }
+  ],
+  "what_changed": "A synthesis of practitioner and funder perspectives on implementing responsible assessment in Switzerland. It discusses narrative CVs, discipline-sensitive qualitative assessment, institutional resistance to CoARA-style reforms, and the growing unreliability of citation counts amid AI-generated publications.",
+  "why_it_matters": "Particularly useful on the operational trade-offs often missing from formal reform statements: how to handle large applicant pools, preserve faculty autonomy, recognise software and public engagement, and combine indicators with qualitative judgment. It also argues that definitions of \"excellence\" need public and political legitimacy, not merely academic agreement.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W44"],
+  "verified": true,
+  "sample": true
+}

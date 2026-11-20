@@ -1,0 +1,35 @@
+{
+  "id": "evt-almasi-diamond-forum",
+  "slug": "almasi-diamond-forum",
+  "title": "Diamond OA Policy Forum Europe: Strategies for Funding Diamond OA in Europe",
+  "organization": "ALMASI project; contributors from Slovenia, ANR, TU Delft, Université de Lorraine, TIB and SCOSS",
+  "org_type": "initiative",
+  "region": "Europe",
+  "country": null,
+  "topics": ["diamond-oa", "business-models", "funder-mandates"],
+  "doc_type": "materials",
+  "status": "new",
+  "policy_id": "pol-diamond-eu",
+  "dates": {
+    "published": "2026-10-12",
+    "updated": null,
+    "effective": null,
+    "consultation_deadline": null,
+    "discovered": "2026-10-16"
+  },
+  "sources": [
+    {
+      "label": "Complete slide collection (DOI)",
+      "url": "https://doi.org/10.5281/zenodo.23301451",
+      "kind": "primary"
+    }
+  ],
+  "what_changed": "The collection places six funding approaches side by side: Slovenian national policy, the French ANR perspective, a university-library model, the AEGIS-OA protection project, TIB's German KOALA consortial-financing service, and SCOSS's international coordination model.",
+  "why_it_matters": "These materials expose the institutional choices hidden inside the generic injunction to \"fund Diamond OA\": direct public subsidy, library portfolio funding, consortial pledging, risk pooling, or internationally coordinated support. The KOALA case is especially useful for Germany because it translates dispersed library budgets into multi-year collective financing.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W42"],
+  "verified": true,
+  "sample": true
+}

@@ -1,0 +1,40 @@
+{
+  "id": "evt-nih-pub-cost-comments",
+  "slug": "nih-pub-cost-comments",
+  "title": "Should NIH Restrict the Use of Grant Funds for Publication Costs? An Analysis of Public Comments",
+  "organization": "Robert M. Kaplan, Health Affairs Scholar",
+  "org_type": "publisher",
+  "region": "North America",
+  "country": "United States",
+  "topics": ["apc-bpc", "consultations", "equity", "research-evidence"],
+  "doc_type": "study",
+  "status": "new",
+  "policy_id": "pol-nih-pub-costs",
+  "dates": {
+    "published": "2026-11-05",
+    "updated": null,
+    "effective": null,
+    "consultation_deadline": null,
+    "discovered": "2026-11-06"
+  },
+  "sources": [
+    {
+      "label": "Article (DOI)",
+      "url": "https://doi.org/10.1093/haschl/qxag163",
+      "kind": "primary"
+    },
+    {
+      "label": "NIH compiled public comments and data",
+      "url": "https://osp.od.nih.gov/get-involved/previously-released-compiled-public-comments/",
+      "kind": "primary"
+    }
+  ],
+  "what_changed": "The study codes all 914 submissions to NIH's consultation on restricting allowable publication costs. Almost half criticised APCs; recurring concerns included publisher concentration, unpaid editorial labour, and inequitable effects on smaller laboratories and early-career researchers. Organisations tended to frame APCs structurally, while individual researchers emphasised immediate financial burdens.",
+  "why_it_matters": "The results challenge the assumption that an APC ceiling alone constitutes effective OA cost policy. Respondents feared that blunt grant-level caps could shift costs onto researchers, disadvantage smaller nonprofit journals, or strengthen publishers with greater economies of scale. The paper instead points toward coordinated procurement, institutional publishing infrastructure, Diamond OA, and formal recognition of reviewing labour. Methodological caution: respondents were self-selected and most comments were initially classified using AI, with human validation limited to a 5% sample.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W45"],
+  "verified": true,
+  "sample": true
+}

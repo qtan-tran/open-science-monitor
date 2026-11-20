@@ -1,0 +1,35 @@
+{
+  "id": "evt-eosc-federation-nodes",
+  "slug": "eosc-federation-nodes",
+  "title": "The EOSC Federation Enters Its Operational Phase",
+  "organization": "European Commission DG Research and Innovation",
+  "org_type": "government",
+  "region": "Europe",
+  "country": null,
+  "topics": ["infrastructure", "research-data"],
+  "doc_type": "announcement",
+  "status": "new",
+  "policy_id": "pol-eosc",
+  "dates": {
+    "published": "2026-10-16",
+    "updated": null,
+    "effective": null,
+    "consultation_deadline": null,
+    "discovered": "2026-10-23"
+  },
+  "sources": [
+    {
+      "label": "Commission implementation update",
+      "url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/europe-expands-access-sharing-and-use-research-data-and-digital-services-through-first-13-open-2026-10-16_en",
+      "kind": "primary"
+    }
+  ],
+  "what_changed": "The first 13 EOSC Nodes have begun operating, extending the Federation beyond the central EU Node. Twenty-seven national, thematic, and e-infrastructure Nodes are joining through two waves, using shared federating capabilities and interoperable services.",
+  "why_it_matters": "This is a concrete transition from Open Science infrastructure policy to distributed service delivery. The unresolved policy questions now concern interoperability, user participation, security, data protection, sustainability, and how nationally controlled resources are coordinated without eliminating local autonomy.",
+  "editorial_status": "edited",
+  "supersedes": null,
+  "merged_from": [],
+  "appearances": ["2026-W43"],
+  "verified": true,
+  "sample": true
+}
