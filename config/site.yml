@@ -1,0 +1,19 @@
+# Site configuration for the Open Science Monitor static website.
+# This file is data, not editorial content: the build reads it and the
+# weekly pipeline never rewrites it.
+
+site:
+  name: "Open Science Monitor"
+  tagline: "Tracking Open Access and Open Science policy, week by week"
+  description: "A weekly monitor of Open Access / Open Science policies, funder mandates, consultations, and infrastructure developments. Curated for researchers, librarians, scholarly communication practitioners, funders, and policy analysts."
+  # Filled in when the repository is created; the build falls back gracefully.
+  repo_url: "https://github.com/qtan-tran/open-science-monitor"
+  pages_url: ""
+  language: "en"
+  locale: "en-GB"
+
+editorial:
+  # Counts are items recorded within the monitored source list. They are not
+  # a measure of how active a country or region is on Open Access / Open
+  # Science. Rendered on the website alongside every count.
+  counts_disclaimer: "Counts describe items recorded within the monitored source list, not the actual level of Open Access or Open Science activity in a country or region."

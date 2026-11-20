@@ -1,0 +1,352 @@
+# Source catalogue for the Open Science Monitor.
+#
+# Every source was fetched and verified before being enabled
+# (last verified: 2026-11-20, from the build sandbox).
+# To propose a new source, open a "Source suggestion" issue via the
+# Sources page or .github/ISSUE_TEMPLATE/source-suggestion.yml.
+#
+# Fields:
+#   id            stable slug used in data files and run reports
+#   name          display name
+#   url           public home page of the source
+#   kind          funder | government | university | infrastructure |
+#                 publisher | library-association | research-association |
+#                 initiative | watchdog | un-agency
+#   region        Europe | North America | Latin America & Caribbean |
+#                 Africa | Asia Pacific | Global
+#   language      ISO-ish code of the main publication language
+#   method        rss | atom | page   (page = announcement page on manual watch)
+#   feed          RSS/Atom URL (required for rss/atom methods)
+#   enabled       true = collected by the weekly pipeline
+#   priority      core (primary policy issuers we never want to miss)
+#                 | supplementary (adds breadth or secondary context)
+#   notes          free text, surfaced on the Sources page
+#
+# guidelines:
+#   Prefer primary announcements and documents from the issuing body.
+#   Before enabling a source: fetch the feed, confirm it parses, note the
+#   date you checked. Disabled entries record known gaps.
+
+coverage:
+  scope: "OA/OS policy, funder mandates, consultations and implementation guidance; Diamond OA, APC/BPC, transformative agreements and publisher business models; repositories, rights retention, licensing and research data; research assessment reform, equity, multilingualism and Indigenous data governance; scholarly communication infrastructure; and peer-reviewed or institutional research on these topics. International scope, deliberately including non-Anglophone and Global South sources."
+  gaps:
+    - "UNESCO (recommended Open Access policy registry) blocks automated fetching from our environment; add a checked alternative (e.g. the ROARS-style API) before enabling."
+    - "LIBER (European research libraries) returns 403 to our fetcher; needs a tailored user-agent strategy or manual watch before enabling."
+    - "OpenAIRE blog RSS is not reachable from the build environment (site is slow / feed errors). Recheck before enabling."
+    - "EU Research & Innovation news page and NIH Office of Science Policy have no stable RSS feed; listed as page-watch sources, collected manually until an API or feed is identified."
+    - "German (DFG), Dutch (NWO), Austrian (FWF), Swiss (SNSF) and Argentine (CONICET) national funder sites expose no usable RSS feed at the moment; page-watch entries welcome."
+    - "Africa coverage is weak: AJOL and AJOL-type infrastructure feeds could not be verified; a reviewed African OA/OS source is a priority need."
+    - "US federal coverage beyond NSF (NIH, OSTP) needs page-watch sources; announcements appear in the monitor only if surfaced by a monitored feed or manual watch."
+  as_of: "2026-11-20"
+  how_to_add: "Open a Source suggestion issue (see the Sources page); after verification the maintainer flips enabled: true and records the date here."
+
+sources:
+  # --- Funders, initiatives, government -------------------------------------------------
+  - id: coalition-s
+    name: "cOAlition S"
+    url: "https://www.coalition-s.org/"
+    kind: initiative
+    region: Europe
+    language: en
+    method: rss
+    feed: "https://www.coalition-s.org/feed/"
+    enabled: true
+    priority: core
+    notes: "Primary source for Plan S policy updates, Rights Retention Strategy, and funder OA guidance."
+
+  - id: ukri
+    name: "UK Research and Innovation (UKRI)"
+    url: "https://www.ukri.org/"
+    kind: funder
+    region: Europe
+    language: en
+    method: rss
+    feed: "https://www.ukri.org/news/rss/"
+    enabled: true
+    priority: core
+    notes: "UKRI has a broad news feed; pipeline relevance-filtering applies. Primary source for the UKRI open access policy line."
+
+  - id: nsf
+    name: "US National Science Foundation (NSF)"
+    url: "https://www.nsf.gov/"
+    kind: funder
+    region: North America
+    language: en
+    method: rss
+    feed: "https://www.nsf.gov/rss/rss_www_news.xml"
+    enabled: true
+    priority: core
+    notes: "Broad news feed; relevance-filtered. The NSF Public Access Report line appears here."
+
+  - id: anr
+    name: "Agence Nationale de la Recherche (ANR)"
+    url: "https://anr.fr/"
+    kind: funder
+    region: Europe
+    language: fr
+    method: rss
+    feed: "https://anr.fr/rss"
+    enabled: true
+    priority: supplementary
+    notes: "French funder announcements; Diamond OA funding perspectives. French feed: titles/summaries retained in French with editorial English notes."
+
+  - id: fapesp
+    name: "FAPESP Agency news"
+    url: "https://agencia.fapesp.br/"
+    kind: funder
+    region: Latin America & Caribbean
+    language: en
+    method: rss
+    feed: "https://agencia.fapesp.br/rss/"
+    enabled: true
+    priority: supplementary
+    notes: "Sao Paulo research funder agency; OA/data policy stories in English, Portuguese and Spanish."
+
+  # --- Infrastructure, repositories, data -------------------------------------------------
+  - id: eosc
+    name: "EOSC (European Open Science Cloud)"
+    url: "https://eosc.eu/"
+    kind: infrastructure
+    region: Europe
+    language: en
+    method: rss
+    feed: "https://eosc.eu/rss"
+    enabled: true
+    priority: supplementary
+    notes: "EOSC federation and node announcements; complements EC announcements."
+
+  - id: doaj
+    name: "DOAJ News"
+    url: "https://blog.doaj.org/"
+    kind: infrastructure
+    region: Global
+    language: en
+    method: rss
+    feed: "https://blog.doaj.org/feed/"
+    enabled: true
+    priority: supplementary
+    notes: "Diamond OA journal infrastructure; publication fees, applications, governance news."
+
+  - id: coar
+    name: "COAR (Confederation of Open Access Repositories)"
+    url: "https://coar-repositories.org/"
+    kind: infrastructure
+    region: Global
+    language: en
+    method: rss
+    feed: "https://coar-repositories.org/feed/"
+    enabled: true
+    priority: supplementary
+    notes: "Repository community news; notify/OAI-PMH infrastructures and repository policy signals."
+
+  - id: ardc
+    name: "Australian Research Data Commons (ARDC)"
+    url: "https://ardc.edu.au/"
+    kind: infrastructure
+    region: Asia Pacific
+    language: en
+    method: rss
+    feed: "https://ardc.edu.au/feed"
+    enabled: true
+    priority: supplementary
+    notes: "Research data infrastructure; Australia-Pacific coverage."
+
+  - id: scielo
+    name: "SciELO Blog"
+    url: "https://blog.scielo.org/"
+    kind: infrastructure
+    region: Latin America & Caribbean
+    language: pt
+    method: rss
+    feed: "https://blog.scielo.org/feed/"
+    enabled: true
+    priority: supplementary
+    notes: "Latin American Diamond OA publishing infrastructure. Portuguese feed with editorial English notes."
+
+  # --- Associations, initiatives, communities --------------------------------------------
+  - id: sparc
+    name: "SPARC"
+    url: "https://sparcopen.org/"
+    kind: initiative
+    region: North America
+    language: en
+    method: rss
+    feed: "https://sparcopen.org/feed/"
+    enabled: true
+    priority: core
+    notes: "Open advocacy; US policy watch, negotiation, and equity analyses. Secondary analysis, useful context; clearly labelled as advocacy."
+
+  - id: dora
+    name: "DORA (San Francisco Declaration on Research Assessment)"
+    url: "https://sfdora.org/"
+    kind: initiative
+    region: Global
+    language: en
+    method: rss
+    feed: "https://sfdora.org/feed/"
+    enabled: true
+    priority: core
+    notes: "Responsible research assessment reform: funder community of practice, guidance, implementation news."
+
+  - id: oaspa
+    name: "OASPA"
+    url: "https://oaspa.org/"
+    kind: publisher
+    region: Global
+    language: en
+    method: rss
+    feed: "https://oaspa.org/feed/"
+    enabled: true
+    priority: supplementary
+    notes: "Open access scholarly publishing association: OA publishing models, transformative agreements, publisher-position news."
+
+  - id: force11
+    name: "FORCE11"
+    url: "https://www.force11.org/"
+    kind: research-association
+    region: Global
+    language: en
+    method: rss
+    feed: "https://www.force11.org/feed/"
+    enabled: true
+    priority: supplementary
+    notes: "Scholarly communication community; open citations, data publishing principles, co-design efforts."
+
+  - id: eifl
+    name: "EIFL (Electronic Information for Libraries)"
+    url: "https://www.eifl.net/"
+    kind: library-association
+    region: Global
+    language: en
+    method: rss
+    feed: "https://www.eifl.net/rss"
+    enabled: true
+    priority: supplementary
+    notes: "Library consortium work in Africa, Asia and Europe; national OA policies and licensing in transition economies."
+
+  - id: twas
+    name: "TWAS (The World Academy of Sciences)"
+    url: "https://twas.org/"
+    kind: un-agency
+    region: Global
+    language: en
+    method: rss
+    feed: "https://twas.org/rss.xml"
+    enabled: true
+    priority: supplementary
+    notes: "Global South science capacity; OA publishing and science policy news relevant to developing countries."
+
+  - id: clacso
+    name: "CLACSO"
+    url: "https://www.clacso.org/"
+    kind: research-association
+    region: Latin America & Caribbean
+    language: es
+    method: rss
+    feed: "https://www.clacso.org/feed/"
+    enabled: true
+    priority: supplementary
+    notes: "Latin American social-science council network; open access/repositories, editorial policies. Spanish editorial notes."
+
+  - id: surf
+    name: "SURF (Netherlands)"
+    url: "https://www.surf.nl/"
+    kind: infrastructure
+    region: Europe
+    language: nl
+    method: rss
+    feed: "https://www.surf.nl/rss"
+    enabled: true
+    priority: supplementary
+    notes: "Dutch national research infrastructure: open access deals, recognition & rewards. Dutch editorial notes."
+
+  # --- Verified gaps: important, but not machine-collectable yet ---------------------------
+  - id: liber
+    name: "LIBER (Association of European Research Libraries)"
+    url: "https://libereurope.eu/"
+    kind: library-association
+    region: Europe
+    language: en
+    method: rss
+    feed: "https://libereurope.eu/feed/"
+    enabled: false
+    priority: core
+    notes: "BLOCKED (403 to our fetcher, 2026-11-20). High-value source (e.g. EOSC position papers). Needs fetch strategy fix or manual watch before enabling."
+
+  - id: openaire
+    name: "OpenAIRE blog"
+    url: "https://www.openaire.eu/community/blogs"
+    kind: infrastructure
+    region: Global
+    language: en
+    method: rss
+    feed: "https://www.openaire.eu/community/blogs/rss"
+    enabled: false
+    priority: supplementary
+    notes: "Feed not reachable from the build environment (repeated timeouts, 2026-11-20). Recheck before enabling."
+
+  - id: unesco-boai
+    name: "UNESCO Open Access programme"
+    url: "https://www.unesco.org/en/open-access"
+    kind: un-agency
+    region: Global
+    language: en
+    method: page
+    enabled: false
+    priority: core
+    notes: "No usable RSS feed. Automated fetching blocked from our environment. Monitor the announcements page manually until an API/feed is found."
+
+  - id: ec-rtd
+    name: "European Commission - Research and Innovation news"
+    url: "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news"
+    kind: government
+    region: Europe
+    language: en
+    method: page
+    enabled: false
+    priority: core
+    notes: "No stable RSS located. Primary source for EU policy announcements (Horizon, EOSC, Open Research Europe). Manual watch: check weekly."
+
+  - id: nih-osp
+    name: "NIH Office of Science Policy"
+    url: "https://osp.od.nih.gov/"
+    kind: government
+    region: North America
+    language: en
+    method: page
+    enabled: false
+    priority: core
+    notes: "No RSS feed. Primary source for NIH publication-cost and public-access actions (comment compilations, notices). Manual watch: check weekly."
+
+  - id: dfg
+    name: "Deutsche Forschungsgemeinschaft (DFG) press releases"
+    url: "https://www.dfg.de/en/service/press/press_releases/"
+    kind: funder
+    region: Europe
+    language: de
+    method: page
+    enabled: false
+    priority: core
+    notes: "No usable RSS feed found (2026-11-20). Primary German funder source (e.g. Open Research Europe announcements). Manual watch: check weekly. German editorial notes."
+
+  - id: nwo
+    name: "NWO (Netherlands Organisation for Scientific Research)"
+    url: "https://www.nwo.nl/"
+    kind: funder
+    region: Europe
+    language: nl
+    method: page
+    enabled: false
+    priority: supplementary
+    notes: "No usable RSS feed found. Dutch funder OA policy line. Manual watch or find announcement API."
+
+  - id: ajol
+    name: "African Journals Online (AJOL)"
+    url: "https://www.ajol.info/"
+    kind: infrastructure
+    region: Africa
+    language: en
+    method: page
+    enabled: false
+    priority: supplementary
+    notes: "No verified feed (2026-11-20). Africa coverage gap: reviewing candidate sources before enabling."

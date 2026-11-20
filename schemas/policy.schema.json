@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Policy or initiative (grouped view for the Policy Tracker)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "organization", "region", "type", "description", "milestones", "verified"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^pol-[a-z0-9][a-z0-9-]*$" },
+    "name": { "type": "string", "minLength": 4 },
+    "organization": { "type": "string", "minLength": 2 },
+    "region": {
+      "enum": ["Europe", "North America", "Latin America & Caribbean", "Africa", "Asia Pacific", "Global"]
+    },
+    "type": { "enum": ["policy", "initiative", "program", "platform"] },
+    "description": { "type": "string", "minLength": 20 },
+    "milestones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["status", "date", "label", "verified"],
+        "properties": {
+          "status": { "enum": ["draft", "consultation", "adopted", "in force", "revised", "operational"] },
+          "date": { "type": ["string", "null"], "format": "date" },
+          "label": { "type": "string", "minLength": 4 },
+          "source": { "type": "string", "format": "uri" },
+          "verified": { "type": "boolean" }
+        }
+      }
+    },
+    "verified": { "type": "boolean" },
+    "sample": { "type": "boolean" }
+  }
+}

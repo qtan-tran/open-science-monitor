@@ -1,0 +1,13 @@
+# Dependencies (none by design: this project runs on plain Node 22+ TypeScript
+# with zero npm dependencies). Keep it that way unless migrating to Astro.
+node_modules/
+
+# Build output
+dist/
+tmp/
+
+# Local scratch and OS noise
+.DS_Store
+*.log
+.env
+.env.*
