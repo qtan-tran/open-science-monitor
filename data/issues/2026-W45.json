@@ -1,0 +1,35 @@
+{
+  "id": "2026-W45",
+  "week_start": "2026-11-02",
+  "generated_at": "2026-11-06T08:30:00+01:00",
+  "status": "sample",
+  "summary": "Three items cleared the bar. The most consequential development is operational rather than analytical: Open Research Europe is now available to all researchers at German institutions.",
+  "signal": "The week connects three layers often treated separately: a publicly financed publishing alternative, controls on publication expenditure, and assessment practices that determine whether alternative outputs receive credit. Open Research Europe supplies infrastructure, but the NIH evidence and the OpenAIRE-DORA discussion show why infrastructure alone will not displace prestige-driven publication choices.",
+  "headline_event": "evt-ore-11-countries",
+  "items": [
+    "evt-ore-11-countries",
+    "evt-nih-pub-cost-comments",
+    "evt-openaire-dora-ra"
+  ],
+  "counts": {
+    "items": 3
+  },
+  "run_report": {
+    "cutoff": "2026-11-06T08:30:00+01:00",
+    "horizon_from": "2026-10-30T08:30:00+00:00",
+    "sources_checked": 0,
+    "sources_failed": 0,
+    "failures": [],
+    "sources": [],
+    "notes": [
+      "SAMPLE ISSUE: pre-seeded from curated human source briefs dated 2026-11-06, not from the automated feed collection."
+    ],
+    "llm_assisted": false
+  },
+  "paths": {
+    "markdown": "issues/2026-W45/index.md",
+    "html": "issues/2026-W45/index.html",
+    "substack": "issues/2026-W45/substack.md"
+  },
+  "sample": true
+}

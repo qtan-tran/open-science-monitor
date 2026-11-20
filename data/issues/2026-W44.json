@@ -1,0 +1,44 @@
+{
+  "id": "2026-W44",
+  "week_start": "2026-10-26",
+  "generated_at": "2026-10-30T08:30:00+01:00",
+  "status": "sample",
+  "summary": "This was a genuinely quiet week: only one new item was strong enough to recommend. Most activity consisted of events or publicity for older policies, not new policy outputs.",
+  "signal": "",
+  "headline_event": "evt-syos-swiss-rra",
+  "items": [
+    "evt-syos-swiss-rra"
+  ],
+  "counts": {
+    "items": 1
+  },
+  "run_report": {
+    "cutoff": "2026-10-30T08:30:00+00:00",
+    "horizon_from": "2026-10-23T08:30:00+02:00",
+    "sources_checked": 0,
+    "sources_failed": 0,
+    "failures": [],
+    "sources": [],
+    "notes": [
+      "SAMPLE ISSUE: pre-seeded from curated human source briefs dated 2026-10-30, not from the automated feed collection.",
+      "Several late-October workshops and conference sessions on Diamond OA, EOSC, and research assessment were checked, but no accompanying report, recommendations, or other durable policy output had appeared."
+    ],
+    "not_shortlisted": [
+      {
+        "title": "University of Bamberg Open Science and revised Open Access policies (renewed attention during Open Access Week)",
+        "reason": "older material resurfacing: both policies were adopted on 5 August 2026, no new policy release in this window"
+      },
+      {
+        "title": "DFG announcement about Open Research Europe's scientific advisory board",
+        "reason": "dated 19 October 2026, before this briefing window; implementation update rather than new substantive analysis"
+      }
+    ],
+    "llm_assisted": false
+  },
+  "paths": {
+    "markdown": "issues/2026-W44/index.md",
+    "html": "issues/2026-W44/index.html",
+    "substack": "issues/2026-W44/substack.md"
+  },
+  "sample": true
+}

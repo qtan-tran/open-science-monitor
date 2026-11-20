@@ -1,0 +1,37 @@
+{
+  "id": "2026-W42",
+  "week_start": "2026-10-12",
+  "generated_at": "2026-10-16T08:30:00+01:00",
+  "status": "sample",
+  "summary": "Four items are worth attention. No substantial new Germany-specific policy or evaluation report emerged; the clearest German contribution is TIB's implementation model within the Diamond OA materials.",
+  "signal": "This week's strongest common thread is the intermediary layer between policy and researcher behaviour. Libraries, funding-metadata systems, consortia, and research-assessment rules determine whether formal commitments to openness become viable publication choices.",
+  "headline_event": "evt-assaf-apc-report-africa",
+  "items": [
+    "evt-assaf-apc-report-africa",
+    "evt-liber-eosc-position",
+    "evt-dora-funders-rra",
+    "evt-almasi-diamond-forum"
+  ],
+  "counts": {
+    "items": 4
+  },
+  "run_report": {
+    "cutoff": "2026-10-16T08:30:00+01:00",
+    "horizon_from": null,
+    "sources_checked": 0,
+    "sources_failed": 0,
+    "failures": [],
+    "sources": [],
+    "notes": [
+      "SAMPLE ISSUE: pre-seeded from curated human source briefs (uploaded ROARA-style policy briefs dated 2026-10-16), not from the automated feed collection.",
+      "No substantial new Germany-specific OA policy or evaluation report was found in the checked material for this week."
+    ],
+    "llm_assisted": false
+  },
+  "paths": {
+    "markdown": "issues/2026-W42/index.md",
+    "html": "issues/2026-W42/index.html",
+    "substack": "issues/2026-W42/substack.md"
+  },
+  "sample": true
+}
