@@ -1,7 +1,7 @@
 {
   "id": "2026-W47",
   "week_start": "2026-11-16",
-  "generated_at": "2026-11-20T12:19:31.684Z",
+  "generated_at": "2026-11-20T12:25:05.658Z",
   "status": "draft",
   "summary": "26 item(s) cleared the relevance gate. Editorial review pending.",
   "signal": "",
@@ -36,7 +36,7 @@
   ],
   "counts": {
     "items": 26,
-    "candidates": 45,
+    "candidates": 44,
     "sources_checked": 18,
     "sources_failed": 1
   },
@@ -63,14 +63,14 @@
         "new_candidates": 0
       },
       {
-        "id": "ukri",
-        "ok": true,
-        "new_candidates": 20
-      },
-      {
         "id": "coar",
         "ok": true,
         "new_candidates": 10
+      },
+      {
+        "id": "ukri",
+        "ok": true,
+        "new_candidates": 20
       },
       {
         "id": "doaj",
@@ -78,22 +78,22 @@
         "new_candidates": 10
       },
       {
+        "id": "eosc",
+        "ok": true,
+        "new_candidates": 0
+      },
+      {
         "id": "fapesp",
         "ok": true,
         "new_candidates": 0
       },
       {
-        "id": "scielo",
+        "id": "dora",
         "ok": true,
         "new_candidates": 10
       },
       {
         "id": "sparc",
-        "ok": true,
-        "new_candidates": 10
-      },
-      {
-        "id": "dora",
         "ok": true,
         "new_candidates": 10
       },
@@ -104,24 +104,24 @@
         "error": "HTTP 403 Forbidden"
       },
       {
-        "id": "coalition-s",
+        "id": "scielo",
         "ok": true,
         "new_candidates": 10
       },
       {
         "id": "force11",
         "ok": true,
-        "new_candidates": 8
+        "new_candidates": 0
+      },
+      {
+        "id": "coalition-s",
+        "ok": true,
+        "new_candidates": 10
       },
       {
         "id": "twas",
         "ok": true,
         "new_candidates": 10
-      },
-      {
-        "id": "eosc",
-        "ok": true,
-        "new_candidates": 0
       },
       {
         "id": "clacso",
@@ -134,14 +134,14 @@
         "new_candidates": 15
       },
       {
-        "id": "ardc",
-        "ok": true,
-        "new_candidates": 0
-      },
-      {
         "id": "eifl",
         "ok": true,
         "new_candidates": 10
+      },
+      {
+        "id": "ardc",
+        "ok": true,
+        "new_candidates": 0
       }
     ],
     "notes": [],
@@ -160,7 +160,7 @@
         "reason": "no topical match in the relevance filter (below threshold)"
       },
       {
-        "title": "Call for Nominations: FORCE11 Board of Directors",
+        "title": "Christian Ferrer (1960-2026)",
         "reason": "no topical match in the relevance filter (below threshold)"
       },
       {
@@ -197,10 +197,6 @@
       },
       {
         "title": "Convocatoria a equipos docentes para la presentación de Seminarios Virtuales 2027",
-        "reason": "no topical match in the relevance filter (below threshold)"
-      },
-      {
-        "title": "Intercambio académico en China",
         "reason": "no topical match in the relevance filter (below threshold)"
       },
       {
@@ -284,26 +280,6 @@
         "reason": "older publication surfaced only now; before the collection window"
       },
       {
-        "title": "Research England launches consultation on future of HEIF formula",
-        "reason": "older publication surfaced only now; before the collection window"
-      },
-      {
-        "title": "UKRI launches faster, easier-to-use Gateway to Research",
-        "reason": "older publication surfaced only now; before the collection window"
-      },
-      {
-        "title": "Research England confirms university funding changes from 2027-28",
-        "reason": "older publication surfaced only now; before the collection window"
-      },
-      {
-        "title": "Scientists find evidence of rarest particle decay after 42-years",
-        "reason": "older publication surfaced only now; before the collection window"
-      },
-      {
-        "title": "UK-wide celebration to engage people with research and innovation",
-        "reason": "older publication surfaced only now; before the collection window"
-      },
-      {
         "title": "Survey on Repository Metadata Collection and Curation Practices",
         "reason": "older publication surfaced only now; before the collection window"
       },
@@ -321,6 +297,26 @@
       },
       {
         "title": "Navigating the Uneasy Interdependence of AI and Open Science",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "COAR Notify and the Launch of a Publish, Review, Curate Alliance",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Mitigating the impact of AI bots",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Reimagining scholarly publishing: outcomes from a public forum to discuss the Publish, Review, Curate publishing model",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "Research England launches consultation on future of HEIF formula",
+        "reason": "older publication surfaced only now; before the collection window"
+      },
+      {
+        "title": "UKRI launches faster, easier-to-use Gateway to Research",
         "reason": "older publication surfaced only now; before the collection window"
       }
     ]

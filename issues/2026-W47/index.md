@@ -1,6 +1,6 @@
 # Open Science Monitor — 2026-W47 (16 November 2026 – 20 November 2026)
 
-> Draft issue — pending editorial review. Merge the issue PR to publish. Generated 2026-11-20T12:19:31.684Z. 26 item(s) recorded within the monitored source list. Source failures and coverage notes: see run report in `data/issues/2026-W47.json`.
+> Draft issue — pending editorial review. Merge the issue PR to publish. Generated 2026-11-20T12:25:05.658Z. 26 item(s) recorded within the monitored source list. Source failures and coverage notes: see run report in `data/issues/2026-W47.json`.
 
 26 item(s) cleared the relevance gate. Editorial review pending.
 
@@ -379,7 +379,7 @@ Checked but not shortlisted:
 - Listening to the landscape: My six-year journey as DOAJ Ambassador for Latin America — no topical match in the relevance filter (below threshold)
 - Applying to be indexed in DOAJ? Start with us — no topical match in the relevance filter (below threshold)
 - Referência não encontrada não é referência inventada: a verificação automática e a literatura latino-americana — no topical match in the relevance filter (below threshold)
-- Call for Nominations: FORCE11 Board of Directors — no topical match in the relevance filter (below threshold)
+- Christian Ferrer (1960-2026) — no topical match in the relevance filter (below threshold)
 - Día Universal del Niño y de la Niña 2026 — no topical match in the relevance filter (below threshold)
 - Convocatoria a equipos docentes para la presentación de Diplomas Superiores 2027 — no topical match in the relevance filter (below threshold)
 - Convenio Marco de Colaboración de CLACSO y la SEBIEN de México — no topical match in the relevance filter (below threshold)
@@ -389,7 +389,6 @@ Checked but not shortlisted:
 - Honduras frente a El Niño: cuidar en tiempos de crisis climática — no topical match in the relevance filter (below threshold)
 - El ataque al periodismo independiente es un ataque a la democracia — no topical match in the relevance filter (below threshold)
 - Convocatoria a equipos docentes para la presentación de Seminarios Virtuales 2027 — no topical match in the relevance filter (below threshold)
-- Intercambio académico en China — no topical match in the relevance filter (below threshold)
 - Update DPIA: Xedule zet grote stappen — no topical match in the relevance filter (below threshold)
 - SURF Onderwijsaward naar Marieke van Osch: “Zij verbindt landelijke AI-ontwikkelingen én onderwijs met elkaar” — no topical match in the relevance filter (below threshold)
 - Open science trainers meet-up — no topical match in the relevance filter (below threshold)
@@ -410,16 +409,16 @@ Checked but not shortlisted:
 - Podcast: Creating thermal cloaking and new structures — older publication surfaced only now; before the collection window
 - NSF launches $20M pilot to accelerate commercialization of promising deep technologies from small businesses — older publication surfaced only now; before the collection window
 - NSF leadership in a new golden age of science — older publication surfaced only now; before the collection window
-- Research England launches consultation on future of HEIF formula — older publication surfaced only now; before the collection window
-- UKRI launches faster, easier-to-use Gateway to Research — older publication surfaced only now; before the collection window
-- Research England confirms university funding changes from 2027-28 — older publication surfaced only now; before the collection window
-- Scientists find evidence of rarest particle decay after 42-years — older publication surfaced only now; before the collection window
-- UK-wide celebration to engage people with research and innovation — older publication surfaced only now; before the collection window
 - Survey on Repository Metadata Collection and Curation Practices — older publication surfaced only now; before the collection window
 - Launch of Publish, Review, Curate (PRC) Alliance: A coalition of stakeholders to foster a researcher-centred model for scholarly publishing — older publication surfaced only now; before the collection window
 - Outcomes of the COAR Annual Conference 2026 — older publication surfaced only now; before the collection window
 - Publish, Review, Curate (PRC) Webinar – May 25, 2026 — older publication surfaced only now; before the collection window
 - Navigating the Uneasy Interdependence of AI and Open Science — older publication surfaced only now; before the collection window
+- COAR Notify and the Launch of a Publish, Review, Curate Alliance — older publication surfaced only now; before the collection window
+- Mitigating the impact of AI bots — older publication surfaced only now; before the collection window
+- Reimagining scholarly publishing: outcomes from a public forum to discuss the Publish, Review, Curate publishing model — older publication surfaced only now; before the collection window
+- Research England launches consultation on future of HEIF formula — older publication surfaced only now; before the collection window
+- UKRI launches faster, easier-to-use Gateway to Research — older publication surfaced only now; before the collection window
 
 ---
 

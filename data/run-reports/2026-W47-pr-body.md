@@ -1,6 +1,6 @@
 ## Issue 2026-W47 — weekly run report
 
-- **Items in this issue:** 26 (candidates considered: 45)
+- **Items in this issue:** 26 (candidates considered: 44)
 - **Window:** since 2026-11-06T08:30:00+01:00 — cutoff 2026-11-20T07:30:00.000Z (Friday 08:30 Europe/Berlin)
 - **Sources checked:** 18 · **failed:** 1 · **LLM assist:** not configured
 

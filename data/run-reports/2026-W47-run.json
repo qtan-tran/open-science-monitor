@@ -1,10 +1,10 @@
 {
   "week": "2026-W47",
   "status": "ok",
-  "at": "2026-11-20T12:19:31.684Z",
+  "at": "2026-11-20T12:25:05.658Z",
   "counts": {
     "items": 26,
-    "candidates": 45,
+    "candidates": 44,
     "sources_checked": 18,
     "sources_failed": 1
   },
