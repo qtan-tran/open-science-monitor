@@ -125,6 +125,8 @@ Publication is approved and the site is live at https://qtan-tran.github.io/open
 
 Prerequisite (done once in repo settings): **Settings → Pages → Build and deployment → Source: "GitHub Actions"**. The legacy "Deploy from a branch" mode serves a Jekyll default site instead of this build. An optional per-deploy approval gate is available at **Settings → Environments → `github-pages` → Required reviewers**.
 
+If the live site ever serves a mix of new and missing pages (this can happen when several deploys are cancelled mid-run in quick succession, e.g. a burst of pushes), force a clean redeploy: **Actions → deploy-pages → Run workflow**, or push any commit to `main`, then give the CDN a few minutes to propagate.
+
 ## What was tested locally vs what needs GitHub
 
 Ran and green locally (Node 22.20, 48/48 `node --test`):
