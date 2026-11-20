@@ -10,6 +10,12 @@ import { loadEvents, loadIssues, loadPolicies, loadSchema, loadSources } from ".
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
+// The hand-seeded demo weeks predate the live pipeline; they must stay visibly
+// marked as samples so nobody mistakes them for real output. Issues produced
+// by the pipeline (e.g. status "draft") are NOT samples and are covered by
+// the schema checks above.
+const SEED_WEEKS = ["2026-W42", "2026-W43", "2026-W44", "2026-W45"];
+
 test("validator catches type, required, enum, pattern, format and additionalProperties", () => {
   const schema = {
     type: "object",
@@ -67,8 +73,10 @@ test("the whole committed data tree passes its schemas", () => {
         problems.push(`${issue.id}: item ${itemId} has no event record`);
       }
     }
-    // sample issues must say they are samples
-    if (issue.sample !== true) problems.push(`${issue.id}: expected sample: true in the seed data`);
+    // sample issues must say they are samples (seed weeks only)
+    if (SEED_WEEKS.includes(issue.id) && issue.sample !== true) {
+      problems.push(`${issue.id}: expected sample: true in the seed data`);
+    }
   }
   for (const p of loadPolicies(REPO_ROOT)) {
     problems.push(...validate(p, policySchema, `policy ${p.id}`).map((i) => `${p.id}: ${i.message}`));
