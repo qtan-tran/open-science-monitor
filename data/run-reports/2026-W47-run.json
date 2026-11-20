@@ -1,0 +1,17 @@
+{
+  "week": "2026-W47",
+  "status": "ok",
+  "at": "2026-11-20T12:19:31.684Z",
+  "counts": {
+    "items": 26,
+    "candidates": 45,
+    "sources_checked": 18,
+    "sources_failed": 1
+  },
+  "failures": [
+    {
+      "id": "oaspa",
+      "error": "HTTP 403 Forbidden"
+    }
+  ]
+}

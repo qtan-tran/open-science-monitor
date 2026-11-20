@@ -1,0 +1,38 @@
+{
+  "appearances": [
+    "2026-W47"
+  ],
+  "dates": {
+    "consultation_deadline": null,
+    "discovered": "2026-11-20",
+    "effective": null,
+    "published": "2026-11-09",
+    "updated": null
+  },
+  "doc_type": "announcement",
+  "editorial_status": "pending",
+  "id": "evt-six-narratives-about-the-true-value-c82324d5",
+  "merged_from": [],
+  "org_type": "infrastructure",
+  "organization": "COAR (Confederation of Open Access Repositories)",
+  "policy_id": null,
+  "region": "Global",
+  "slug": "six-narratives-about-the-true-value-c82324d5",
+  "sources": [
+    {
+      "kind": "primary",
+      "label": "COAR (Confederation of Open Access Repositories)",
+      "source_id": "coar",
+      "url": "https://coar-repositories.org/news-updates/six-narratives-about-the-impact-of-open-repositories/"
+    }
+  ],
+  "status": "new",
+  "supersedes": null,
+  "title": "Six narratives about the true value of open repositories",
+  "topics": [
+    "repositories"
+  ],
+  "verified": false,
+  "what_changed": "Pending editorial review. COAR (Confederation of Open Access Repositories) title: \"Six narratives about the true value of open repositories\". For too long, repositories have been described as background utilities: useful, worthy, and easy to overlook. That framing no longer fits. Scholarly communication is being reshaped by geopolitical pressures, integrity scandals, AI, and a long-overdue rethink of how research is a… (Auto-stub; verify against the source before publishing.)",
+  "why_it_matters": "Pending editorial review. Editorial relevance from COAR (Confederation of Open Access Repositories) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+}

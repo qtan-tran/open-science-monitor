@@ -1,0 +1,38 @@
+{
+  "appearances": [
+    "2026-W47"
+  ],
+  "dates": {
+    "consultation_deadline": null,
+    "discovered": "2026-11-20",
+    "effective": null,
+    "published": "2026-11-09",
+    "updated": null
+  },
+  "doc_type": "announcement",
+  "editorial_status": "pending",
+  "id": "evt-sparc-welcomes-katya-mueller-as-visiting-d889b567",
+  "merged_from": [],
+  "org_type": "initiative",
+  "organization": "SPARC",
+  "policy_id": null,
+  "region": "North America",
+  "slug": "sparc-welcomes-katya-mueller-as-visiting-d889b567",
+  "sources": [
+    {
+      "kind": "primary",
+      "label": "SPARC",
+      "source_id": "sparc",
+      "url": "https://sparcopen.org/news/2026/sparc-welcomes-katya-mueller-as-visiting-program-officer-for-open-education/"
+    }
+  ],
+  "status": "new",
+  "supersedes": null,
+  "title": "SPARC welcomes Katya Mueller as Visiting Program Officer for Open Education",
+  "topics": [
+    "oa-policy"
+  ],
+  "verified": false,
+  "what_changed": "Pending editorial review. SPARC title: \"SPARC welcomes Katya Mueller as Visiting Program Officer for Open Education\". The post SPARC welcomes Katya Mueller as Visiting Program Officer for Open Education appeared first on SPARC . (Auto-stub; verify against the source before publishing.)",
+  "why_it_matters": "Pending editorial review. Editorial relevance from SPARC not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+}

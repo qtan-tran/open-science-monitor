@@ -1,0 +1,96 @@
+{
+  "as_of": "2026-11-20",
+  "entries": {
+    "nsf": {
+      "ok": true,
+      "items": 15,
+      "last_checked": "2026-11-20"
+    },
+    "anr": {
+      "ok": true,
+      "items": 0,
+      "last_checked": "2026-11-20"
+    },
+    "ukri": {
+      "ok": true,
+      "items": 20,
+      "last_checked": "2026-11-20"
+    },
+    "coar": {
+      "ok": true,
+      "items": 10,
+      "last_checked": "2026-11-20"
+    },
+    "doaj": {
+      "ok": true,
+      "items": 10,
+      "last_checked": "2026-11-20"
+    },
+    "fapesp": {
+      "ok": true,
+      "items": 0,
+      "last_checked": "2026-11-20"
+    },
+    "scielo": {
+      "ok": true,
+      "items": 10,
+      "last_checked": "2026-11-20"
+    },
+    "sparc": {
+      "ok": true,
+      "items": 10,
+      "last_checked": "2026-11-20"
+    },
+    "dora": {
+      "ok": true,
+      "items": 10,
+      "last_checked": "2026-11-20"
+    },
+    "oaspa": {
+      "ok": false,
+      "items": 0,
+      "last_checked": "2026-11-20",
+      "error": "HTTP 403 Forbidden"
+    },
+    "coalition-s": {
+      "ok": true,
+      "items": 10,
+      "last_checked": "2026-11-20"
+    },
+    "force11": {
+      "ok": true,
+      "items": 8,
+      "last_checked": "2026-11-20"
+    },
+    "twas": {
+      "ok": true,
+      "items": 10,
+      "last_checked": "2026-11-20"
+    },
+    "eosc": {
+      "ok": true,
+      "items": 0,
+      "last_checked": "2026-11-20"
+    },
+    "clacso": {
+      "ok": true,
+      "items": 10,
+      "last_checked": "2026-11-20"
+    },
+    "surf": {
+      "ok": true,
+      "items": 15,
+      "last_checked": "2026-11-20"
+    },
+    "ardc": {
+      "ok": true,
+      "items": 0,
+      "last_checked": "2026-11-20"
+    },
+    "eifl": {
+      "ok": true,
+      "items": 10,
+      "last_checked": "2026-11-20"
+    }
+  }
+}

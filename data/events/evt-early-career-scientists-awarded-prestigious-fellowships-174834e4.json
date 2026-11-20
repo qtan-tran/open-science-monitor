@@ -1,0 +1,38 @@
+{
+  "appearances": [
+    "2026-W47"
+  ],
+  "dates": {
+    "consultation_deadline": null,
+    "discovered": "2026-11-20",
+    "effective": null,
+    "published": "2026-11-16",
+    "updated": null
+  },
+  "doc_type": "announcement",
+  "editorial_status": "pending",
+  "id": "evt-early-career-scientists-awarded-prestigious-fellowships-174834e4",
+  "merged_from": [],
+  "org_type": "funder",
+  "organization": "UK Research and Innovation (UKRI)",
+  "policy_id": null,
+  "region": "Europe",
+  "slug": "early-career-scientists-awarded-prestigious-fellowships-174834e4",
+  "sources": [
+    {
+      "kind": "primary",
+      "label": "UK Research and Innovation (UKRI)",
+      "source_id": "ukri",
+      "url": "https://www.ukri.org/news/early-career-scientists-awarded-prestigious-fellowships/"
+    }
+  ],
+  "status": "new",
+  "supersedes": null,
+  "title": "Early career scientists awarded prestigious fellowships",
+  "topics": [
+    "oa-policy"
+  ],
+  "verified": false,
+  "what_changed": "Pending editorial review. UK Research and Innovation (UKRI) title: \"Early career scientists awarded prestigious fellowships\". Twenty three researchers won NERC Independent Research Fellowships to support and grow environmental science impact and outcomes worth nearly £18 million. NERC (Auto-stub; verify against the source before publishing.)",
+  "why_it_matters": "Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+}

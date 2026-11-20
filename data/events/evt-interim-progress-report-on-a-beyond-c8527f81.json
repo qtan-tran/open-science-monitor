@@ -1,0 +1,38 @@
+{
+  "appearances": [
+    "2026-W47"
+  ],
+  "dates": {
+    "consultation_deadline": null,
+    "discovered": "2026-11-20",
+    "effective": null,
+    "published": "2026-11-20",
+    "updated": null
+  },
+  "doc_type": "report",
+  "editorial_status": "pending",
+  "id": "evt-interim-progress-report-on-a-beyond-c8527f81",
+  "merged_from": [],
+  "org_type": "initiative",
+  "organization": "DORA (San Francisco Declaration on Research Assessment)",
+  "policy_id": null,
+  "region": "Global",
+  "slug": "interim-progress-report-on-a-beyond-c8527f81",
+  "sources": [
+    {
+      "kind": "primary",
+      "label": "DORA (San Francisco Declaration on Research Assessment)",
+      "source_id": "dora",
+      "url": "https://sfdora.org/2026/11/20/beyond-article-update/"
+    }
+  ],
+  "status": "new",
+  "supersedes": null,
+  "title": "Interim Progress Report on a “Beyond the Article” Action Group: Learnings and Next Steps",
+  "topics": [
+    "research-assessment"
+  ],
+  "verified": false,
+  "what_changed": "Pending editorial review. DORA (San Francisco Declaration on Research Assessment) title: \"Interim Progress Report on a “Beyond the Article” Action Group: Learnings and Next Steps\". The post Interim Progress Report on a “Beyond the Article” Action Group: Learnings and Next Steps appeared first on DORA . (Auto-stub; verify against the source before publishing.)",
+  "why_it_matters": "Pending editorial review. Editorial relevance from DORA (San Francisco Declaration on Research Assessment) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+}
