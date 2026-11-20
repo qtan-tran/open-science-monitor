@@ -1,0 +1,86 @@
+name: Source suggestion
+description: Suggest a source for the Open Science Monitor catalogue (config/sources.yml)
+labels: [source-suggestion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for expanding the monitor's coverage. Before a source is added it
+        must be verified: the maintainer fetches the feed or page, confirms it
+        parses, and records the check date. Primary sources (policy issuers,
+        funders, universities, infrastructure bodies, publishers) are preferred
+        over secondary commentary.
+  - type: input
+    id: name
+    attributes:
+      label: Source name
+      description: Official name of the organisation or publication
+      placeholder: e.g. "Swiss National Science Foundation (SNSF)"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Organisation homepage or announcement page
+      placeholder: https://…
+    validations:
+      required: true
+  - type: input
+    id: feed
+    attributes:
+      label: Feed or API URL (if known)
+      description: RSS 2.0, Atom or RDF; API endpoints are welcome too. Leave empty for a page-watch source.
+      placeholder: https://…/feed/
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of source is this?
+      options:
+        - funder
+        - government / policy body
+        - university / library
+        - infrastructure provider
+        - publisher
+        - journal / publication
+        - researcher network
+        - other
+    validations:
+      required: true
+  - type: dropdown
+    id: region
+    attributes:
+      label: Region
+      options:
+        - Europe
+        - North America
+        - Latin America & Caribbean
+        - Africa
+        - Asia Pacific
+        - Global
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Publication language
+      placeholder: en, de, fr, es, pt, ar, id, vi, …
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this source relevant?
+      description: Which of the monitor's topics does it cover, and why is primary coverage from it valuable? Non-Anglophone and Global South sources are especially welcome.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I checked the source is not already listed on the Sources page / in config/sources.yml
+          required: true
+        - label: If it has a feed, I confirmed the feed loads in a browser or reader
+          required: false

@@ -1,0 +1,43 @@
+# CI: tests + data validation + render determinism + site build on every push
+# and pull request. `npm test` is not used so that no package manager runs:
+# the suite and the pipeline are dependency-free and run on plain Node 22.
+
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+
+      - name: Node version sanity
+        run: node --version
+
+      - name: Tests (unit + end-to-end pipeline suite)
+        run: node --test "tests/*.test.ts"
+
+      - name: Validate the data tree
+        run: node scripts/pipeline/validate-data.ts
+
+      - name: Committed renders match the datasets
+        run: node scripts/render-issue-outputs.ts --check
+
+      - name: Build the website
+        run: node scripts/build-site.ts

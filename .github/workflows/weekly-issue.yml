@@ -1,0 +1,85 @@
+# Weekly issue pipeline.
+#
+# Schedules: two cron slots so that exactly one is 08:30 Europe/Berlin
+# year-round, whatever the DST state:
+#   - "30 6 * * 5" UTC is 08:30 Berlin during CEST (late Mar .. late Oct)
+#   - "30 7 * * 5" UTC is 08:30 Berlin during CET  (late Oct .. late Mar)
+# scripts/berlin-guard.ts checks the actual Berlin wall clock and exits 1 for
+# the slot that is NOT 08:30, so a week never double-fires or shifts an hour.
+# workflow_dispatch bypasses the guard for manual or catch-up runs.
+#
+# Outputs: one branch issue/<ISO-week> + one update-or-open PR per week
+# (created by scripts/pipeline/git-ci.ts). Merging the PR publishes the issue
+# to the website (deploy-pages.yml picks up main).
+
+name: weekly-issue
+
+on:
+  schedule:
+    - cron: "30 6 * * 5" # 08:30 Europe/Berlin in CEST
+    - cron: "30 7 * * 5" # 08:30 Europe/Berlin in CET
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "ISO week to process, e.g. 2026-W47 (empty = current week)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: weekly-issue
+  cancel-in-progress: false
+
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+
+      # Of the two cron slots, only the one that is actually 08:30 in Berlin
+      # proceeds; the other exits here cleanly (the guard prints run=false).
+      - name: Guard the Berlin 08:30 slot
+        id: guard
+        run: node scripts/berlin-guard.ts >> "$GITHUB_OUTPUT"
+
+      - name: Resolve the ISO week
+        id: week
+        if: github.event_name != 'schedule' || steps.guard.outputs.run == 'true'
+        run: |
+          WEEK="${{ github.event.inputs.week }}"
+          if [ -z "$WEEK" ]; then
+            WEEK=$(node --input-type=module -e "const {pathToFileURL}=await import('node:url');const m=await import(pathToFileURL(process.cwd()+'/shared/iso-week.ts').href);console.log(m.isoWeekIdOf(new Date()))")
+          fi
+          # Fail fast on a mistyped manual input.
+          node --input-type=module -e "const {pathToFileURL}=await import('node:url');const m=await import(pathToFileURL(process.cwd()+'/shared/iso-week.ts').href);m.mondayOfIsoWeek('$WEEK')"
+          echo "week=$WEEK" >> "$GITHUB_OUTPUT"
+
+      - name: Run the weekly pipeline
+        if: github.event_name != 'schedule' || steps.guard.outputs.run == 'true'
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+          GITHUB_REF_TYPE: ${{ github.ref_type }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          GITHUB_ACTIONS: "true"
+          GH_TOKEN: ${{ github.token }}
+          # Optional LLM assist for classification and draft paragraphs.
+          # Without these the pipeline still runs; items stay "pending".
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+        run: node scripts/run-issue.ts --week ${{ steps.week.outputs.week }}
+
+      # On success the pipeline has committed data/issues/<week>.json,
+      # issues/<week>/{index.md,index.html,substack.md}, event records and the
+      # PR body report to the issue/<week> branch, and opened/updated the PR.
+      # A broad fetch failure exits 1 here on purpose: no issue is created
+      # that would look thoroughly checked when it was not.
