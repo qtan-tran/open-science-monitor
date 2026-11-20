@@ -31,7 +31,18 @@ jobs:
         run: node --version
 
       - name: Tests (unit + end-to-end pipeline suite)
-        run: node --test "tests/*.test.ts"
+        run: |
+          LOG=$(mktemp)
+          set +e
+          node --test "tests/*.test.ts" > "$LOG" 2>&1
+          code=$?
+          set -e
+          cat "$LOG"
+          if [ "$code" -ne 0 ]; then
+            TAIL_MSG=$(tail -n 15 "$LOG" | tr '\n' ' ')
+            echo "::error::Tests failed (exit $code, node $(node --version)). Output tail: ${TAIL_MSG:0:700}"
+          fi
+          exit "$code"
 
       - name: Validate the data tree
         run: node scripts/pipeline/validate-data.ts
