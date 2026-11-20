@@ -21,7 +21,7 @@ on:
   workflow_dispatch:
     inputs:
       week:
-        description: "ISO week to process, e.g. 2026-W47 (empty = current week)"
+        description: "ISO week to process, e.g. 2026-W47 (empty = current week). Spaces and lower case are normalised."
         required: false
         default: ""
 
@@ -38,9 +38,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version-file: ".nvmrc"
 
@@ -55,10 +55,21 @@ jobs:
         if: github.event_name != 'schedule' || steps.guard.outputs.run == 'true'
         run: |
           WEEK="${{ github.event.inputs.week }}"
+          # Normalise a manual input: trim, drop internal spaces and double
+          # quotes, upper-case the w. "2026 - w47 " becomes "2026-W47".
+          if [ -n "$WEEK" ]; then
+            WEEK=$(printf '%s' "$WEEK" | tr -d '[:space:]' | tr -d '"' | tr '[:lower:]' '[:upper:]')
+          fi
           if [ -z "$WEEK" ]; then
             WEEK=$(node --input-type=module -e "const {pathToFileURL}=await import('node:url');const m=await import(pathToFileURL(process.cwd()+'/shared/iso-week.ts').href);console.log(m.isoWeekIdOf(new Date()))")
           fi
-          # Fail fast on a mistyped manual input.
+          # Fail fast on a mistyped manual input, with a readable message.
+          # The shape check runs first so only digits and "W" ever reach the
+          # interpolated node command below.
+          if ! printf '%s' "$WEEK" | grep -Eq '^[0-9]{4}-W[0-9]{2}$'; then
+            echo "::error::Invalid week input \"${{ github.event.inputs.week }}\" (normalised: \"$WEEK\"). Use the form 2026-W47 (4-digit year, W, 2-digit week), or leave the input empty to process the current week."
+            exit 1
+          fi
           node --input-type=module -e "const {pathToFileURL}=await import('node:url');const m=await import(pathToFileURL(process.cwd()+'/shared/iso-week.ts').href);m.mondayOfIsoWeek('$WEEK')"
           echo "week=$WEEK" >> "$GITHUB_OUTPUT"
 
