@@ -1,15 +1,12 @@
-# Website deployment to GitHub Pages.
+# Website deployment to GitHub Pages (Source: GitHub Actions).
 #
-# PUBLISHING GATE (two locks, both deliberate):
-#  1. This workflow only runs when the repository variable PAGES_ENABLED is
-#     "true" (Settings -> Secrets and variables -> Actions -> Variables).
-#     Until you set it, nothing deploys, even after merging to main.
-#  2. Keep Pages itself disabled (Settings -> Pages) until the site has been
-#     reviewed. When enabling: Source = "GitHub Actions". Optionally set
-#     Settings -> Environments -> github-pages -> Required reviewers as a
-#     per-deploy approval gate.
-# The repository can stay private while the Pages site is public; website
-# visibility is independent of repository visibility.
+# Publication has been approved by the maintainer (2026-11-20), so the
+# repository-level gate is removed. Every push to main builds the site and
+# deploys it. One manual prerequisite in repo settings (once):
+#   Settings -> Pages -> Build and deployment -> Source: "GitHub Actions"
+# The legacy "Deploy from a branch" mode serves a Jekyll default site instead
+# of this build. Optional per-deploy approval gate at any time:
+#   Settings -> Environments -> github-pages -> Required reviewers.
 
 name: deploy-pages
 
@@ -29,9 +26,6 @@ concurrency:
 
 jobs:
   build:
-    # Approval gate: flip the repository variable PAGES_ENABLED to "true"
-    # when the site is approved for publication.
-    if: vars.PAGES_ENABLED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -47,7 +41,11 @@ jobs:
           node scripts/render-issue-outputs.ts --check
           node scripts/build-site.ts
 
+      # Sets the Pages base URL; enablement: true also turns Pages on
+      # (build_type: workflow) if it is not enabled yet.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -4,7 +4,7 @@ A monitoring hub for **Open Access (OA)** and **Open Science (OS)** policy devel
 
 - **Interface and newsletter language:** English
 - **Scope:** international, deliberately including non-Anglophone and Global South sources
-- **This repository is private.** The website publishes to GitHub Pages only after explicit maintainer approval (see [Publishing the website](#publishing-the-website-approval-gated)).
+- **Website:** https://qtan-tran.github.io/open-science-monitor/ — the repository is public and the site is deployed by GitHub Actions.
 
 ---
 
@@ -119,15 +119,11 @@ For any published week, `issues/<week>/substack.md` is the editable draft: sugge
 3. Add an entry to `config/sources.yml` (copy the shape of an existing entry), set `enabled: true`, add a `notes:` line and record the check if it changes coverage. Disabled entries document known gaps in `coverage.gaps`.
 4. `node scripts/pipeline/validate-data.ts` validates the catalogue against `schemas/source.schema.json`.
 
-## Publishing the website (approval-gated)
+## Publishing the website
 
-The repository can stay private while the Pages site is public. Publication is intentional and two-step:
+Publication is approved and the site is live at https://qtan-tran.github.io/open-science-monitor/. Every push to `main` triggers `deploy-pages.yml`: validate → verify renders → build → deploy.
 
-1. **Repo settings → Pages → Build and deployment → Source: GitHub Actions.** Until this is done, nothing is public. `deploy-pages.yml` is ready but inert.
-2. Optional approval gate: **Settings → Environments → `github-pages` → Required reviewers.** With a reviewer set, every deploy waits for your approval.
-3. Merging into `main` triggers `deploy-pages.yml`: validate → verify renders → build → deploy.
-
-Leave Pages disabled until you have reviewed the built site (for example `node scripts/build-site.ts` locally) and decided it should be public.
+Prerequisite (done once in repo settings): **Settings → Pages → Build and deployment → Source: "GitHub Actions"**. The legacy "Deploy from a branch" mode serves a Jekyll default site instead of this build. An optional per-deploy approval gate is available at **Settings → Environments → `github-pages` → Required reviewers**.
 
 ## What was tested locally vs what needs GitHub
 
@@ -147,4 +143,4 @@ The data model keeps sources, events, policies and issues separate with stable I
 
 ## License
 
-All rights reserved for now (private repository). Add an OSS license before making the code public.
+All rights reserved. The repository is public; add an OSS license (for example MIT) in a dedicated commit if you want to permit reuse of the code.
