@@ -21,6 +21,31 @@ interface RunResult {
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const WEEK = "2026-W47";
+
+// The pipeline switches into "Actions mode" when the CI environment variables
+// are present (per-week git branch + PR handling). These tests exercise the
+// file pipeline against a synthetic root, so the children must never see the
+// CI markers: on a GitHub Actions runner the test process itself inherits
+// GITHUB_ACTIONS/GITHUB_REPOSITORY, and without scrubbing, run-issue would
+// try to run git against the temp fixture root and fail. LLM_* is scrubbed
+// so classification stays deterministic in tests.
+const CHILD_ENV: Record<string, string> = (() => {
+  const env: Record<string, string> = {};
+  for (const [key, value] of Object.entries(process.env)) {
+    if (value === undefined) continue;
+    if (
+      key === "CI" ||
+      key === "GITHUB_ACTIONS" ||
+      key === "GH_TOKEN" ||
+      key.startsWith("GITHUB_") ||
+      key.startsWith("LLM_")
+    ) {
+      continue;
+    }
+    env[key] = value;
+  }
+  return env;
+})();
 const NEXT_WEEK = "2026-W48";
 const FAR_WEEK = "2026-W49";
 
@@ -75,6 +100,7 @@ function run(script: string, args: string[]): Promise<RunResult> {
   return new Promise((resolve) => {
     const child = spawn(process.execPath, [path.join(REPO_ROOT, script), ...args], {
       cwd: REPO_ROOT,
+      env: CHILD_ENV,
       stdio: ["ignore", "pipe", "pipe"],
     });
     let out = "";
