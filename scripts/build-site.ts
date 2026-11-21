@@ -10,10 +10,29 @@
 
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { createHash } from "node:crypto";
 
 import type { Event, Issue, Policy } from "../shared/types.ts";
 import { dateRangeOf, dateLabels, esc } from "./pipeline/render.ts";
 import { loadEvents, loadIssues, loadPolicies, loadSiteConfig, loadSourceStatus, loadSources, REPO_ROOT, rootFromArg } from "./lib/data.ts";
+
+// Build a version tag for the static assets: browsers cache styles.css for a
+// while (GitHub Pages sends max-age=600), so every design change must ship a
+// NEW asset URL, or returning visitors keep seeing the previous stylesheet.
+// The tag is the content hash of the stylesheet, so it only changes when the
+// file actually changes.
+let ASSET_VER = "";
+function computeAssetVersion(root: string): void {
+  try {
+    const css = fs.readFileSync(path.join(root, "site", "assets", "styles.css"));
+    ASSET_VER = createHash("sha256").update(css).digest("hex").slice(0, 10);
+  } catch {
+    ASSET_VER = ""; // e.g. synthetic roots without the real assets
+  }
+}
+function assetUrl(rel: string): string {
+  return ASSET_VER ? `${rel}?v=${ASSET_VER}` : rel;
+}
 
 // ---------------------------------------------------------------------------
 // Small template helpers
@@ -86,7 +105,7 @@ function layout(
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(opts.title)} · ${esc(cfg.site.name)}</title>
 <meta name="description" content="${esc(opts.description)}">
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="${assetUrl("/assets/styles.css")}">
 ${opts.extraHead ?? ""}
 </head>
 <body>
@@ -232,7 +251,7 @@ function pageArchive(cfg: ReturnType<typeof loadSiteConfig>, data: SiteData, all
     description: "Full-text search and filters across all recorded items.",
     active: "/archive/",
     content,
-    extraHead: `${head}<script src="/assets/archive.js" defer></script>`,
+    extraHead: `${head}<script src="${assetUrl("/assets/archive.js")}" defer></script>`,
   });
 }
 
@@ -380,6 +399,7 @@ function pageSources(cfg: ReturnType<typeof loadSiteConfig>, root: string): stri
 // ---------------------------------------------------------------------------
 
 export function buildSite(root: string, outDir?: string): { files: string[] } {
+  computeAssetVersion(root);
   const cfg = loadSiteConfig(root);
   const dist = outDir ?? path.join(root, "dist");
   fs.rmSync(dist, { recursive: true, force: true });
