@@ -195,7 +195,7 @@ sources:
     region: Global
     language: en
     method: rss
-    feed: "https://oaspa.org/feed/"
+    feed: "https://www.oaspa.org/feed/"
     enabled: true
     priority: supplementary
     notes: "Open access scholarly publishing association: OA publishing models, transformative agreements, publisher-position news."
