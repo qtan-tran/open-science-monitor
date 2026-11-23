@@ -13,7 +13,9 @@
   if (!form || !results) return;
   var rows = Array.prototype.slice.call(results.querySelectorAll(".archive-row"));
   var total = rows.length;
-  var indexPromise = fetch("/search-index.json")
+  var base = document.documentElement.getAttribute("data-base") || "/";
+  if (base.charAt(base.length - 1) !== "/") base += "/";
+  var indexPromise = fetch(base + "search-index.json")
     .then(function (r) { return r.ok ? r.json() : []; })
     .catch(function () { return []; });
   var textById = {};

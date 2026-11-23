@@ -10,28 +10,47 @@
 
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { createHash } from "node:crypto";
 
 import type { Event, Issue, Policy } from "../shared/types.ts";
 import { dateRangeOf, dateLabels, esc } from "./pipeline/render.ts";
 import { loadEvents, loadIssues, loadPolicies, loadSiteConfig, loadSourceStatus, loadSources, REPO_ROOT, rootFromArg } from "./lib/data.ts";
 
-// Build a version tag for the static assets: browsers cache styles.css for a
-// while (GitHub Pages sends max-age=600), so every design change must ship a
-// NEW asset URL, or returning visitors keep seeing the previous stylesheet.
-// The tag is the content hash of the stylesheet, so it only changes when the
-// file actually changes.
-let ASSET_VER = "";
-function computeAssetVersion(root: string): void {
+// Every page embeds the stylesheet and the archive script INLINE. Some
+// browser / proxy / antivirus setups break stylesheet subresource loading on
+// *.github.io even when the file itself is served correctly, and stale asset
+// caches are a recurring GitHub Pages failure mode; self-contained pages
+// remove both problems because no secondary request is needed at all.
+// The files are still copied into dist/assets for direct linking.
+let INLINE_CSS = "";
+let INLINE_JS = "";
+let SITE_BASE = ""; // no trailing slash; "" for domain-root sites
+
+function siteBaseOf(pagesUrl: string): string {
+  if (!pagesUrl) return "";
   try {
-    const css = fs.readFileSync(path.join(root, "site", "assets", "styles.css"));
-    ASSET_VER = createHash("sha256").update(css).digest("hex").slice(0, 10);
+    const p = new URL(pagesUrl).pathname;
+    return p.length > 1 && p.endsWith("/") ? p.slice(0, -1) : p;
   } catch {
-    ASSET_VER = ""; // e.g. synthetic roots without the real assets
+    return "";
   }
 }
-function assetUrl(rel: string): string {
-  return ASSET_VER ? `${rel}?v=${ASSET_VER}` : rel;
+
+// Prefix every internal site path with SITE_BASE. GitHub Pages project sites
+// live under /<repo>/, so absolute paths like "/archive/" would resolve to the
+// user's domain root and 404 (or hit a different site). Call href() for every
+// internal link; keep purely external https URLs as they are.
+function href(rel: string): string {
+  if (rel === "/") return SITE_BASE ? `${SITE_BASE}/` : "/";
+  return `${SITE_BASE}${rel}`;
+}
+function loadInlineAssets(root: string): void {
+  try {
+    INLINE_CSS = fs.readFileSync(path.join(root, "site", "assets", "styles.css"), "utf8");
+    INLINE_JS = fs.readFileSync(path.join(root, "site", "assets", "archive.js"), "utf8");
+  } catch {
+    INLINE_CSS = "";
+    INLINE_JS = ""; // e.g. synthetic roots without the real assets
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -68,7 +87,7 @@ function eventCard(ev: Event, opts: { week?: string; repoUrl?: string } = {}): s
     )
     .join('<span class="sep"> · </span>');
   const policy = ev.policy_id
-    ? `<a class="policy-link" href="/policy-tracker/#${esc(ev.policy_id)}">${esc(ev.policy_id)}</a>`
+    ? `<a class="policy-link" href="${href("/policy-tracker/") }#${esc(ev.policy_id)}">${esc(ev.policy_id)}</a>`
     : "";
   return `<article class="item" id="evt-${esc(ev.slug)}" data-id="${esc(ev.id)}"${opts.week ? ` data-week="${esc(opts.week)}"` : ""}>
   <h3>${esc(ev.title)}</h3>
@@ -93,19 +112,21 @@ function layout(
     ["/sources/", "Sources"],
   ];
   const nav = navItems
-    .map(([href, label]) => {
+    .map(([itemHref, label]) => {
       const active = opts.active === href ? ' aria-current="page"' : "";
-      return `<a href="${href}"${active}>${label}</a>`;
+      return `<a href="${href(itemHref)}"${active}>${label}</a>`;
     })
     .join("");
   return `<!doctype html>
-<html lang="${esc(cfg.site.language)}">
+<html lang="${esc(cfg.site.language)}" data-base="${esc(SITE_BASE ? `${SITE_BASE}/` : "/")}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(opts.title)} · ${esc(cfg.site.name)}</title>
 <meta name="description" content="${esc(opts.description)}">
-<link rel="stylesheet" href="${assetUrl("/assets/styles.css")}">
+<style>
+${INLINE_CSS}
+</style>
 ${opts.extraHead ?? ""}
 </head>
 <body>
@@ -113,7 +134,7 @@ ${opts.extraHead ?? ""}
 <header class="site-header">
   <div class="wrap">
     <p class="kicker">${esc(cfg.site.name)}</p>
-    <h1><a href="/">${esc(cfg.site.tagline)}</a></h1>
+    <h1><a href="${href("/")}">${esc(cfg.site.tagline)}</a></h1>
     <nav aria-label="Main">${nav}</nav>
   </div>
 </header>
@@ -146,7 +167,7 @@ function findIssuesEvents(issue: Issue, events: Map<string, Event>): Event[] {
 
 function archiveArticle(ev: Event, week: string): string {
   return `<div class="archive-row" data-id="${esc(ev.id)}" data-week="${esc(week)}" data-region="${esc(ev.region)}" data-org="${esc(ev.organization.toLowerCase())}" data-type="${esc(ev.doc_type)}" data-topics="${esc(ev.topics.join(" "))}">
-  <p class="meta"><a href="/issues/${esc(week)}/#${esc(ev.id)}">${esc(week)}</a> · ${esc(ev.organization)} · ${esc(ev.region)}</p>
+  <p class="meta"><a href="${href(`/issues/${esc(week)}/`)}#${esc(ev.id)}">${esc(week)}</a> · ${esc(ev.organization)} · ${esc(ev.region)}</p>
   <h3>${esc(ev.title)}</h3>
   <p class="topics">${ev.topics.map((t) => chip(t)).join("")}</p>
   <dl>
@@ -180,7 +201,7 @@ function pageLatest(cfg: ReturnType<typeof loadSiteConfig>, data: SiteData): str
     [`/files/${issue.id}/index.html`, "HTML (standalone)"],
     [`/files/${issue.id}/substack.md`, "Substack draft"],
   ]
-    .map(([href, label]) => `<a class="button" href="${esc(href!)}" download>${esc(label!)}</a>`)
+    .map(([file, label]) => `<a class="button" href="${esc(href(file!))}" download>${esc(label!)}</a>`)
     .join(" ");
   const ghBase = cfg.site.repo_url ? `${cfg.site.repo_url}/blob/main` : null;
   const ghLinks = ghBase
@@ -203,7 +224,7 @@ function pageLatest(cfg: ReturnType<typeof loadSiteConfig>, data: SiteData): str
 <section class="items">
   ${cards}
 </section>
-<p class="meta"><a href="/archive/">Browse the archive</a> · <a href="/policy-tracker/">Policy tracker</a>${data.issues.length > 1 ? ` · <a href="/issues/">All issues (${data.issues.length})</a>` : ""}</p>`;
+<p class="meta"><a href="${href("/archive/")}">Browse the archive</a> · <a href="${href("/policy-tracker/")}">Policy tracker</a>${data.issues.length > 1 ? ` · <a href="${href("/issues/")}">All issues (${data.issues.length})</a>` : ""}</p>`;
 
   return layout(cfg, {
     title: `Latest issue ${issue.id}`,
@@ -244,14 +265,19 @@ function pageArchive(cfg: ReturnType<typeof loadSiteConfig>, data: SiteData, all
     week: (data.issues.find((i) => i.items.includes(ev.id))?.id) ?? "",
     text: `${ev.title} ${ev.organization} ${ev.region} ${ev.topics.join(" ")} ${ev.doc_type} ${ev.what_changed} ${ev.why_it_matters}`.toLowerCase(),
   }));
-  const head = `<link rel="preload" href="/search-index.json" as="fetch" crossorigin>`;
+  const head = `<link rel="preload" href="${href("/search-index.json")}" as="fetch" crossorigin>`;
   void index;
   return layout(cfg, {
     title: "Archive",
     description: "Full-text search and filters across all recorded items.",
     active: "/archive/",
     content,
-    extraHead: `${head}<script src="${assetUrl("/assets/archive.js")}" defer></script>`,
+    extraHead: `${head}<!-- assets/archive.js (inlined) -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+${INLINE_JS}
+});
+</script>`,
   });
 }
 
@@ -262,7 +288,7 @@ function pageIssuesIndex(cfg, data: SiteData): string {
     .map((issue) => {
       const evs = findIssuesEvents(issue, data.events);
       return `<li>
-  <a href="/issues/${esc(issue.id)}/"><strong>${esc(issue.id)}</strong></a> — ${esc(dateRangeOf(issue.week_start))} · ${evs.length} item(s) ${issue.status === "sample" ? chip("SAMPLE", "warn") : ""}
+  <a href="${href(`/issues/${esc(issue.id)}/`)}"><strong>${esc(issue.id)}</strong></a> — ${esc(dateRangeOf(issue.week_start))} · ${evs.length} item(s) ${issue.status === "sample" ? chip("SAMPLE", "warn") : ""}
   <p class="meta">${esc(issue.summary)}</p>
 </li>`;
     })
@@ -292,9 +318,9 @@ function pageIssue(cfg: ReturnType<typeof loadSiteConfig>, issue: Issue, data: S
   ${issue.signal ? `<h3>Overall signal</h3><p>${esc(issue.signal)}</p>` : ""}
   ${sampleNote}
   <p class="downloads">
-    <a class="button" href="/files/${esc(issue.id)}/index.md" download>Markdown</a>
-    <a class="button" href="/files/${esc(issue.id)}/index.html" download>HTML (standalone)</a>
-    <a class="button" href="/files/${esc(issue.id)}/substack.md" download>Substack draft</a>
+    <a class="button" href="${href(`/files/${esc(issue.id)}/index.md`)}" download>Markdown</a>
+    <a class="button" href="${href(`/files/${esc(issue.id)}/index.html`)}" download>HTML (standalone)</a>
+    <a class="button" href="${href(`/files/${esc(issue.id)}/substack.md`)}" download>Substack draft</a>
   </p>
 </section>
 <section class="items">
@@ -316,7 +342,7 @@ function pagePolicyTracker(cfg: ReturnType<typeof loadSiteConfig>, data: SiteDat
         .sort((a, b) => (b.dates.discovered ?? "").localeCompare(a.dates.discovered ?? ""));
       const rel = related
         .map((ev) => {
-          const weeks = ev.appearances.map((w) => `<a href="/issues/${esc(w)}/#${esc(ev.id)}">${esc(w)}</a>`).join(", ");
+          const weeks = ev.appearances.map((w) => `<a href="${href(`/issues/${esc(w)}/`)}#${esc(ev.id)}">${esc(w)}</a>`).join(", ");
           return `<li>${esc(ev.title)} <span class="meta">(covered in ${weeks || "—"})</span></li>`;
         })
         .join("");
@@ -399,8 +425,9 @@ function pageSources(cfg: ReturnType<typeof loadSiteConfig>, root: string): stri
 // ---------------------------------------------------------------------------
 
 export function buildSite(root: string, outDir?: string): { files: string[] } {
-  computeAssetVersion(root);
+  loadInlineAssets(root);
   const cfg = loadSiteConfig(root);
+  SITE_BASE = siteBaseOf(cfg.site.pages_url);
   const dist = outDir ?? path.join(root, "dist");
   fs.rmSync(dist, { recursive: true, force: true });
   fs.mkdirSync(dist, { recursive: true });

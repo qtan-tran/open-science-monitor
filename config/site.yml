@@ -8,7 +8,7 @@ site:
   description: "A weekly monitor of Open Access / Open Science policies, funder mandates, consultations, and infrastructure developments. Curated for researchers, librarians, scholarly communication practitioners, funders, and policy analysts."
   # Filled in when the repository is created; the build falls back gracefully.
   repo_url: "https://github.com/qtan-tran/open-science-monitor"
-  pages_url: ""
+  pages_url: "https://qtan-tran.github.io/open-science-monitor/"
   language: "en"
   locale: "en-GB"
 
