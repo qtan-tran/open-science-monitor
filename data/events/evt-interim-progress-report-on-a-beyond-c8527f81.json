@@ -10,7 +10,7 @@
     "updated": null
   },
   "doc_type": "report",
-  "editorial_status": "pending",
+  "editorial_status": "edited",
   "id": "evt-interim-progress-report-on-a-beyond-c8527f81",
   "merged_from": [],
   "org_type": "initiative",
@@ -32,7 +32,7 @@
   "topics": [
     "research-assessment"
   ],
-  "verified": false,
-  "what_changed": "Pending editorial review. DORA (San Francisco Declaration on Research Assessment) title: \"Interim Progress Report on a “Beyond the Article” Action Group: Learnings and Next Steps\". The post Interim Progress Report on a “Beyond the Article” Action Group: Learnings and Next Steps appeared first on DORA . (Auto-stub; verify against the source before publishing.)",
-  "why_it_matters": "Pending editorial review. Editorial relevance from DORA (San Francisco Declaration on Research Assessment) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+  "verified": true,
+  "what_changed": "DORA published an interim report from the \"Beyond the Article\" action group (co-led by the International Science Council, HHMI and ASAPbio, six convenings March-October 2026 after a November 2025 Pisa workshop): a mapping of 23 initiatives working to recognise datasets, software, code, protocols and preprints, plus where progress stalls and what barriers remain.",
+  "why_it_matters": "Research assessment and publishing still revolve around the journal article, while modern research produces many other outputs; the report documents the recognition gap between what research produces and what is evaluated, cited and rewarded."
 }

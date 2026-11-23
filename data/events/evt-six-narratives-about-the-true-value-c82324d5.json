@@ -10,7 +10,7 @@
     "updated": null
   },
   "doc_type": "announcement",
-  "editorial_status": "pending",
+  "editorial_status": "edited",
   "id": "evt-six-narratives-about-the-true-value-c82324d5",
   "merged_from": [],
   "org_type": "infrastructure",
@@ -30,9 +30,10 @@
   "supersedes": null,
   "title": "Six narratives about the true value of open repositories",
   "topics": [
-    "repositories"
+    "repositories",
+    "multilingualism"
   ],
-  "verified": false,
-  "what_changed": "Pending editorial review. COAR (Confederation of Open Access Repositories) title: \"Six narratives about the true value of open repositories\". For too long, repositories have been described as background utilities: useful, worthy, and easy to overlook. That framing no longer fits. Scholarly communication is being reshaped by geopolitical pressures, integrity scandals, AI, and a long-overdue rethink of how research is a… (Auto-stub; verify against the source before publishing.)",
-  "why_it_matters": "Pending editorial review. Editorial relevance from COAR (Confederation of Open Access Repositories) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+  "verified": true,
+  "what_changed": "COAR published its \"New Narratives Series for Repositories\", arguing repository value across six areas, starting with the public value of repositories (access for physicians, educators, entrepreneurs outside the academy), digital sovereignty and local stewardship (distributed, institution-governed infrastructure with no single point of failure), and multilingual scholarship (repositories as a foundation for a multilingual scholarly commons).",
+  "why_it_matters": "Repositories are usually described as background utilities; the series reframes them as infrastructure answering geopolitical, AI and integrity pressures, which matters for how institutions and funders justify repository investment."
 }

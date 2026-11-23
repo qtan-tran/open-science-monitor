@@ -10,7 +10,7 @@
     "updated": null
   },
   "doc_type": "announcement",
-  "editorial_status": "pending",
+  "editorial_status": "edited",
   "id": "evt-coar-launches-retractions-task-force-40eee90d",
   "merged_from": [],
   "org_type": "infrastructure",
@@ -33,7 +33,7 @@
     "repositories",
     "infrastructure"
   ],
-  "verified": false,
-  "what_changed": "Pending editorial review. COAR (Confederation of Open Access Repositories) title: \"COAR launches Retractions Task Force\". (photo credit: Salon/Getty Images) Retractions usually take place on the journal website and by the publisher, without the information being conveyed to other platforms or infrastructures, such as a repository that hosts a copy of that article. In the 2012 paper, The Persistence… (Auto-stub; verify against the source before publishing.)",
-  "why_it_matters": "Pending editorial review. Editorial relevance from COAR (Confederation of Open Access Repositories) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+  "verified": true,
+  "what_changed": "COAR is launching a Task Force (starting December 2026, about nine months) to develop recommended practices for managing retractions in repositories: define terminology (retractions, corrections, removals, expressions of concern), identify methods for detecting retracted articles held in repositories, and set good practices for repositories once a retracted article is found.",
+  "why_it_matters": "Freely available copies of retracted papers often carry no retraction notice, so orphaned copies keep being read and cited, and repositories can be criticised for spreading discredited science. With rising retraction volumes and AI-generated fake papers, repository-side handling of retractions is becoming a credibility question for open infrastructure."
 }

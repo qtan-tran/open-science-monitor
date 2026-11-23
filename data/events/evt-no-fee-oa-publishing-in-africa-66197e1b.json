@@ -10,13 +10,13 @@
     "updated": null
   },
   "doc_type": "announcement",
-  "editorial_status": "pending",
+  "editorial_status": "edited",
   "id": "evt-no-fee-oa-publishing-in-africa-66197e1b",
   "merged_from": [],
   "org_type": "library-association",
   "organization": "EIFL (Electronic Information for Libraries)",
   "policy_id": null,
-  "region": "Global",
+  "region": "Africa",
   "slug": "no-fee-oa-publishing-in-africa-66197e1b",
   "sources": [
     {
@@ -30,9 +30,10 @@
   "supersedes": null,
   "title": "No-fee OA publishing in Africa CoP",
   "topics": [
-    "apc-bpc"
+    "diamond-oa",
+    "equity"
   ],
-  "verified": false,
-  "what_changed": "Pending editorial review. EIFL (Electronic Information for Libraries) title: \"No-fee OA publishing in Africa CoP\". Join the next meeting of the Community of Practice (CoP) for no-fee OA publishing in Africa. Date and time : 18 November at 10:00 UTC/11:00 WAT/12:00 CAT/13:00 EAT ( convert to your timezone ). We will reflect on 2026 CoP results and discuss plans for the next year. There will a… (Auto-stub; verify against the source before publishing.)",
-  "why_it_matters": "Pending editorial review. Editorial relevance from EIFL (Electronic Information for Libraries) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+  "verified": true,
+  "what_changed": "The Community of Practice for no-fee (Diamond) OA publishing in Africa held its next meeting on 18 November (10:00 UTC), reviewing 2026 results, planning next year, and collecting editors' and publishers' needs and challenges; the meeting was moderated by EIFL's Milica Sevkusic and is part of the Wellcome-funded \"Collaboration for Sustainable Open Access Publishing in Africa\".",
+  "why_it_matters": "The CoP is the standing community infrastructure for Diamond OA in the region, and the monitor explicitly tracks Global South publishing capacity; agenda-setting meetings like this decide its next-year priorities."
 }

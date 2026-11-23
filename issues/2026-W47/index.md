@@ -1,372 +1,138 @@
 # Open Science Monitor — 2026-W47 (16 November 2026 – 20 November 2026)
 
-> Draft issue — pending editorial review. Merge the issue PR to publish. Generated 2026-11-20T12:25:05.658Z. 26 item(s) recorded within the monitored source list. Source failures and coverage notes: see run report in `data/issues/2026-W47.json`.
+> Published. Generated 2026-11-20T12:25:05.658Z. 9 item(s) recorded within the monitored source list. Source failures and coverage notes: see run report in `data/issues/2026-W47.json`.
 
-26 item(s) cleared the relevance gate. Editorial review pending.
+Community-heavy week: DORA advanced two strands of responsible-assessment work (a forthcoming Practical Guide for scholarly communication, and a Beyond-the-Article interim report), COAR launched a retractions task force and reframed the value of repositories, and EIFL published a Diamond OA financial-planning toolkit while asking the EU for an EU-wide secondary publication right for researchers. EIFL is also bringing research data management training to researchers in Ukraine.
+
+## Overall signal
+
+Assessment reform is converging with publishing infrastructure: repositories are being asked to handle retractions, peer review is being pushed into reward systems, and Diamond OA sustainability is being turned into something funders can actually plan against.
 
 ## 1. ASAPbio November Community Call: Informing DORA’s “Practical Guide for Scholarly Communication”
 
-**DORA (San Francisco Declaration on Research Assessment)** — new · Global · topics: research-assessment · announcement · unverified
+**DORA (San Francisco Declaration on Research Assessment)** — new · Global · topics: research-assessment · announcement
 
 Published: 2026-11-14 · Recorded: 2026-11-20
 
 Sources: [DORA (San Francisco Declaration on Research Assessment)](https://sfdora.org/2026/11/13/asapbio-november-community-call-informing-doras-practical-guide-for-scholarly-communication/) (primary)
 
-**What changed:** Pending editorial review. DORA (San Francisco Declaration on Research Assessment) title: "ASAPbio November Community Call: Informing DORA’s “Practical Guide for Scholarly Communication”". The post ASAPbio November Community Call: Informing DORA’s “Practical Guide for Scholarly Communication” appeared first on DORA . (Auto-stub; verify against the source before publishing.)
+**What changed:** DORA, ASAPbio and openRxiv co-hosted a community call (5 November) previewing DORA's forthcoming "Practical Guide to Implementing Responsible Research Assessment in Scholarly Communication" and asking the community to help shape it. openRxiv presented trust-signal features (open reviews, data and code availability) that preprint servers can offer for responsible assessment.
 
-**Why it matters:** Pending editorial review. Editorial relevance from DORA (San Francisco Declaration on Research Assessment) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
+**Why it matters:** The Guide follows DORA's 2025 research-organisation and 2026 funder guides and targets publishers, repositories, libraries and infrastructure providers; community input at this stage decides how practical it becomes, and preprint platforms are the live testing ground for assessment features.
 
 Event ID: `evt-asapbio-november-community-call-informing-dora-879fcc96`
 
 ## 2. COAR launches Retractions Task Force
 
-**COAR (Confederation of Open Access Repositories)** — new · Global · topics: repositories, infrastructure · announcement · unverified
+**COAR (Confederation of Open Access Repositories)** — new · Global · topics: repositories, infrastructure · announcement
 
 Published: 2026-11-17 · Recorded: 2026-11-20
 
 Sources: [COAR (Confederation of Open Access Repositories)](https://coar-repositories.org/news-updates/coar-launches-retraction-task-force/) (primary)
 
-**What changed:** Pending editorial review. COAR (Confederation of Open Access Repositories) title: "COAR launches Retractions Task Force". (photo credit: Salon/Getty Images) Retractions usually take place on the journal website and by the publisher, without the information being conveyed to other platforms or infrastructures, such as a repository that hosts a copy of that article. In the 2012 paper, The Persistence… (Auto-stub; verify against the source before publishing.)
+**What changed:** COAR is launching a Task Force (starting December 2026, about nine months) to develop recommended practices for managing retractions in repositories: define terminology (retractions, corrections, removals, expressions of concern), identify methods for detecting retracted articles held in repositories, and set good practices for repositories once a retracted article is found.
 
-**Why it matters:** Pending editorial review. Editorial relevance from COAR (Confederation of Open Access Repositories) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
+**Why it matters:** Freely available copies of retracted papers often carry no retraction notice, so orphaned copies keep being read and cited, and repositories can be criticised for spreading discredited science. With rising retraction volumes and AI-generated fake papers, repository-side handling of retractions is becoming a credibility question for open infrastructure.
 
 Event ID: `evt-coar-launches-retractions-task-force-40eee90d`
 
 ## 3. Financial sustainability planning toolkit for Diamond OA journals
 
-**EIFL (Electronic Information for Libraries)** — new · Global · topics: diamond-oa · announcement · unverified
+**EIFL (Electronic Information for Libraries)** — new · Global · topics: diamond-oa · materials
 
 Published: 2026-11-11 · Recorded: 2026-11-20
 
 Sources: [EIFL (Electronic Information for Libraries)](https://www.eifl.net/news/financial-sustainability-planning-toolkit-diamond-oa-journals) (primary)
 
-**What changed:** Pending editorial review. EIFL (Electronic Information for Libraries) title: "Financial sustainability planning toolkit for Diamond OA journals". We are pleased to announce the publication of the Financial sustainability planning toolkit for Diamond OA journals, a set of three complementary resources to help editorial teams plan the finances of Diamond Open Access (OA) journals. Diamond OA journals do not charge fees for… (Auto-stub; verify against the source before publishing.)
+**What changed:** EIFL published a Financial sustainability planning toolkit for Diamond OA journals: three complementary resources that help editorial teams turn good practice into a complete, credible three-year sustainability plan for parent institutions and funders.
 
-**Why it matters:** Pending editorial review. Editorial relevance from EIFL (Electronic Information for Libraries) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
+**Why it matters:** Diamond OA journals charge neither authors nor readers, so financial sustainability is their structural weak point; practical planning resources are what funders and institutions ask for before committing support.
 
 Event ID: `evt-financial-sustainability-planning-toolkit-for-diamond-c18182f2`
 
 ## 4. Interim Progress Report on a “Beyond the Article” Action Group: Learnings and Next Steps
 
-**DORA (San Francisco Declaration on Research Assessment)** — new · Global · topics: research-assessment · report · unverified
+**DORA (San Francisco Declaration on Research Assessment)** — new · Global · topics: research-assessment · report
 
 Published: 2026-11-20 · Recorded: 2026-11-20
 
 Sources: [DORA (San Francisco Declaration on Research Assessment)](https://sfdora.org/2026/11/20/beyond-article-update/) (primary)
 
-**What changed:** Pending editorial review. DORA (San Francisco Declaration on Research Assessment) title: "Interim Progress Report on a “Beyond the Article” Action Group: Learnings and Next Steps". The post Interim Progress Report on a “Beyond the Article” Action Group: Learnings and Next Steps appeared first on DORA . (Auto-stub; verify against the source before publishing.)
+**What changed:** DORA published an interim report from the "Beyond the Article" action group (co-led by the International Science Council, HHMI and ASAPbio, six convenings March-October 2026 after a November 2025 Pisa workshop): a mapping of 23 initiatives working to recognise datasets, software, code, protocols and preprints, plus where progress stalls and what barriers remain.
 
-**Why it matters:** Pending editorial review. Editorial relevance from DORA (San Francisco Declaration on Research Assessment) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
+**Why it matters:** Research assessment and publishing still revolve around the journal article, while modern research produces many other outputs; the report documents the recognition gap between what research produces and what is evaluated, cited and rewarded.
 
 Event ID: `evt-interim-progress-report-on-a-beyond-c8527f81`
 
 ## 5. No-fee OA publishing in Africa CoP
 
-**EIFL (Electronic Information for Libraries)** — new · Global · topics: apc-bpc · announcement · unverified
+**EIFL (Electronic Information for Libraries)** — new · Africa · topics: diamond-oa, equity · announcement
 
 Published: 2026-11-12 · Recorded: 2026-11-20
 
 Sources: [EIFL (Electronic Information for Libraries)](https://www.eifl.net/events/no-fee-oa-publishing-africa-cop-15) (primary)
 
-**What changed:** Pending editorial review. EIFL (Electronic Information for Libraries) title: "No-fee OA publishing in Africa CoP". Join the next meeting of the Community of Practice (CoP) for no-fee OA publishing in Africa. Date and time : 18 November at 10:00 UTC/11:00 WAT/12:00 CAT/13:00 EAT ( convert to your timezone ). We will reflect on 2026 CoP results and discuss plans for the next year. There will a… (Auto-stub; verify against the source before publishing.)
+**What changed:** The Community of Practice for no-fee (Diamond) OA publishing in Africa held its next meeting on 18 November (10:00 UTC), reviewing 2026 results, planning next year, and collecting editors' and publishers' needs and challenges; the meeting was moderated by EIFL's Milica Sevkusic and is part of the Wellcome-funded "Collaboration for Sustainable Open Access Publishing in Africa".
 
-**Why it matters:** Pending editorial review. Editorial relevance from EIFL (Electronic Information for Libraries) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
+**Why it matters:** The CoP is the standing community infrastructure for Diamond OA in the region, and the monitor explicitly tracks Global South publishing capacity; agenda-setting meetings like this decide its next-year priorities.
 
 Event ID: `evt-no-fee-oa-publishing-in-africa-66197e1b`
 
 ## 6. PREreview Roundtable “Beyond Visibility: How Do We Make Peer Review Truly Valued?”
 
-**DORA (San Francisco Declaration on Research Assessment)** — new · Global · topics: research-assessment · announcement · unverified
+**DORA (San Francisco Declaration on Research Assessment)** — new · Global · topics: research-assessment · announcement
 
 Published: 2026-11-18 · Recorded: 2026-11-20
 
 Sources: [DORA (San Francisco Declaration on Research Assessment)](https://sfdora.org/2026/11/18/prereview-roundtable-peer-review/) (primary)
 
-**What changed:** Pending editorial review. DORA (San Francisco Declaration on Research Assessment) title: "PREreview Roundtable “Beyond Visibility: How Do We Make Peer Review Truly Valued?”". The post PREreview Roundtable “Beyond Visibility: How Do We Make Peer Review Truly Valued?” appeared first on DORA . (Auto-stub; verify against the source before publishing.)
+**What changed:** DORA and PREreview hosted an online roundtable (7 October, 39 participants) on valuing peer review, gathering input for DORA's forthcoming Practical Guide. Discussion centred on recognition and reward mechanisms: financial compensation, targeted support for early-career reviewers, digital certification, and reciprocity and credit systems.
 
-**Why it matters:** Pending editorial review. Editorial relevance from DORA (San Francisco Declaration on Research Assessment) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
+**Why it matters:** Peer review work is largely invisible and unrecognised in assessment systems, which shapes the incentives (or lack of them) for doing it and feeds a sustainability crisis; the roundtable output feeds directly into a Guide that scholarly-communication organisations will implement.
 
 Event ID: `evt-prereview-roundtable-beyond-visibility-how-do-6caebb56`
 
 ## 7. Research data management training at the National University of Kyiv-Mohyla Academy in Ukraine
 
-**EIFL (Electronic Information for Libraries)** — new · Global · topics: research-data · announcement · unverified
+**EIFL (Electronic Information for Libraries)** — new · Europe · topics: research-data · announcement
 
 Published: 2026-11-13 · Recorded: 2026-11-20
 
 Sources: [EIFL (Electronic Information for Libraries)](https://www.eifl.net/events/research-data-management-training-national-university-kyiv-mohyla-academy-ukraine) (primary)
 
-**What changed:** Pending editorial review. EIFL (Electronic Information for Libraries) title: "Research data management training at the National University of Kyiv-Mohyla Academy in Ukraine". EIFL’s Open Access Programme Manager, Iryna Kuchma will facilitate the Research data management training for researchers from the National University of Kyiv-Mohyla Academy in Ukraine. (Auto-stub; verify against the source before publishing.)
+**What changed:** EIFL's Open Access Programme Manager, Iryna Kuchma, will facilitate a research data management training for researchers at the National University of Kyiv-Mohyla Academy in Ukraine (9 December 2026, online), building research data management capacity at a Ukrainian university.
 
-**Why it matters:** Pending editorial review. Editorial relevance from EIFL (Electronic Information for Libraries) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
+**Why it matters:** Research data management skills are a prerequisite for open data sharing and reuse; the training is part of EIFL's ongoing Open Access Programme work in Ukraine, turning national open-data ambitions into practical skills.
 
 Event ID: `evt-research-data-management-training-at-the-e44db1f2`
 
 ## 8. The way forward for copyright, research and AI in Europe
 
-**EIFL (Electronic Information for Libraries)** — new · Global · topics: consultations · consultation · unverified
+**EIFL (Electronic Information for Libraries)** — new · Europe · topics: consultations, licensing · consultation
 
 Published: 2026-11-12 · Recorded: 2026-11-20
 
 Sources: [EIFL (Electronic Information for Libraries)](https://www.eifl.net/news/way-forward-copyright-research-and-ai-europe) (primary)
 
-**What changed:** Pending editorial review. EIFL (Electronic Information for Libraries) title: "The way forward for copyright, research and AI in Europe". The European Commission is considering targeted changes to the EU’s copyright framework to facilitate research and innovation and enhance the resilience and competitiveness of Europe’s cultural and creative sectors. EIFL’s response to the targeted consultation focused on two are… (Auto-stub; verify against the source before publishing.)
+**What changed:** EIFL responded to the European Commission's targeted consultation on the EU copyright framework, asking for clarification of copyright rules for research and generative AI, transparency obligations for AI providers, and an EU-wide right of secondary publication for researchers.
 
-**Why it matters:** Pending editorial review. Editorial relevance from EIFL (Electronic Information for Libraries) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
+**Why it matters:** A secondary publication right would give researchers a legal basis to make their work open regardless of publisher contracts, and the AI rules will shape text-and-data-mining for research across the EU. This is an open-access policy question, not only a copyright one.
 
 Event ID: `evt-the-way-forward-for-copyright-research-00972a86`
 
-## 9. Training on responsible peer review in Slovenia
+## 9. Six narratives about the true value of open repositories
 
-**EIFL (Electronic Information for Libraries)** — new · Global · topics: research-data · announcement · unverified
-
-Published: 2026-11-09 · Recorded: 2026-11-20
-
-Sources: [EIFL (Electronic Information for Libraries)](https://www.eifl.net/events/training-responsible-peer-review-slovenia) (primary)
-
-**What changed:** Pending editorial review. EIFL (Electronic Information for Libraries) title: "Training on responsible peer review in Slovenia". Milica Ševkušić, Project Coordinator in the EIFL Open Access Programme, will contribute to two workshops on responsible peer review of research publications and research data in Slovenia. (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from EIFL (Electronic Information for Libraries) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-training-on-responsible-peer-review-in-7d789190`
-
-## 10. Six narratives about the true value of open repositories
-
-**COAR (Confederation of Open Access Repositories)** — new · Global · topics: repositories · announcement · unverified
+**COAR (Confederation of Open Access Repositories)** — new · Global · topics: repositories, multilingualism · announcement
 
 Published: 2026-11-09 · Recorded: 2026-11-20
 
 Sources: [COAR (Confederation of Open Access Repositories)](https://coar-repositories.org/news-updates/six-narratives-about-the-impact-of-open-repositories/) (primary)
 
-**What changed:** Pending editorial review. COAR (Confederation of Open Access Repositories) title: "Six narratives about the true value of open repositories". For too long, repositories have been described as background utilities: useful, worthy, and easy to overlook. That framing no longer fits. Scholarly communication is being reshaped by geopolitical pressures, integrity scandals, AI, and a long-overdue rethink of how research is a… (Auto-stub; verify against the source before publishing.)
+**What changed:** COAR published its "New Narratives Series for Repositories", arguing repository value across six areas, starting with the public value of repositories (access for physicians, educators, entrepreneurs outside the academy), digital sovereignty and local stewardship (distributed, institution-governed infrastructure with no single point of failure), and multilingual scholarship (repositories as a foundation for a multilingual scholarly commons).
 
-**Why it matters:** Pending editorial review. Editorial relevance from COAR (Confederation of Open Access Repositories) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
+**Why it matters:** Repositories are usually described as background utilities; the series reframes them as infrastructure answering geopolitical, AI and integrity pressures, which matters for how institutions and funders justify repository investment.
 
 Event ID: `evt-six-narratives-about-the-true-value-c82324d5`
-
-## 11. £15 million boost for outstanding new concepts
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-18 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/15-million-boost-for-outstanding-new-concepts/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "£15 million boost for outstanding new concepts". From contactless blood pressure monitors to an online platform to boost recyclable fashion a wide range of projects have been launched down the runway. AHRC BBSRC EPSRC ESRC MRC NERC STFC (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-15-million-boost-for-outstanding-new-04912cb8`
-
-## 12. Celebrating 10 years of the Francis Crick Institute
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-09 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/celebrating-10-years-of-the-francis-crick-institute/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "Celebrating 10 years of the Francis Crick Institute". MRC, Wellcome and Cancer Research UK celebrate two decades of partnership, and the people who brought our shared vision for discovery research to life. MRC (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-celebrating-10-years-of-the-francis-a38ca700`
-
-## 13. Central Laser Facility partners with First Light Fusion
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-18 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/central-laser-facility-partners-with-first-light-fusion/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "Central Laser Facility partners with First Light Fusion". Scientists at the Central Laser Facility will model how short, intense laser pulses can heat compressed fusion fuel. STFC (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-central-laser-facility-partners-with-first-fb5c624c`
-
-## 14. Charging towards the battery electric future
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-12 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/charging-towards-the-battery-electric-future/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "Charging towards the battery electric future". The Battery Innovation Programme has awarded £28.6m to 27 projects to strengthen the UK battery sector and boost national capability. Innovate UK (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-charging-towards-the-battery-electric-future-2ace0333`
-
-## 15. Construction begins on giant underground neutrino experiment
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-10 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/construction-begins-on-giant-underground-neutrino-experiment/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "Construction begins on giant underground neutrino experiment". UK technology is playing a critical role in one of the world's most ambitious particle physics experiments. STFC (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-construction-begins-on-giant-underground-neutrino-1ca79aa4`
-
-## 16. Early career scientists awarded prestigious fellowships
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-16 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/early-career-scientists-awarded-prestigious-fellowships/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "Early career scientists awarded prestigious fellowships". Twenty three researchers won NERC Independent Research Fellowships to support and grow environmental science impact and outcomes worth nearly £18 million. NERC (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-early-career-scientists-awarded-prestigious-fellowships-174834e4`
-
-## 17. First of a Kind rail projects announced
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-17 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/first-of-a-kind-rail-awards-announced/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "First of a Kind rail projects announced". First of a Kind (FOAK) 2026 winners will receive funding to help develop novel technologies that address a range of challenges identified by the rail industry. Innovate UK (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-first-of-a-kind-rail-projects-f20506a2`
-
-## 18. Funding tomorrow’s medicines manufacturing labs today
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-17 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/funding-tomorrows-medicines-manufacturing-labs-today/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "Funding tomorrow’s medicines manufacturing labs today". Innovate UK is supporting eight innovative UK businesses to use digital, automated, and robotic technologies to optimise pharmaceutical process development and manufacturing. Innovate UK (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-funding-tomorrow-s-medicines-manufacturing-labs-555e5a95`
-
-## 19. How the UK built a quantum technology nation
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-06 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/how-the-uk-built-a-quantum-technology-nation/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "How the UK built a quantum technology nation". At the National Quantum Technologies Showcase, UK Research and Innovation (UKRI) publishes an evaluation of a decade of UK quantum investment. (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-how-the-uk-built-a-quantum-a43d68c0`
-
-## 20. More businesses to benefit from critical technology scheme
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-06 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/more-businesses-to-benefit-from-critical-technology-scheme/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "More businesses to benefit from critical technology scheme". The Future Technology Research and Innovation (FTRI) visa scheme has been broadened so that more businesses can benefit. UKRI (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-more-businesses-to-benefit-from-critical-6682e8ad`
-
-## 21. New policy fellowships for the regions launched
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-17 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/new-policy-fellowships-for-the-regions-launched/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "New policy fellowships for the regions launched". Five new experts will join strategic mayoral authorities or a regional partnership to help tackle local challenges, ranging from health to economic growth. AHRC BBSRC EPSRC ESRC MRC NERC STFC (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-new-policy-fellowships-for-the-regions-f6f225e0`
-
-## 22. New technology to spot illness years earlier gets UKRI backing
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-06 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/new-technology-to-spot-illness-years-earlier-gets-ukri-backing/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "New technology to spot illness years earlier gets UKRI backing". People across the UK could soon benefit from apps that listen to coughs, an AI wellbeing coach to manage heart disease and routine eye scans that detect diabetes. EPSRC (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-new-technology-to-spot-illness-years-9ec6728e`
-
-## 23. Preferred candidate named for Research England Executive Chair
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-10 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/preferred-candidate-named-for-research-england-executive-chair/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "Preferred candidate named for Research England Executive Chair". Business Secretary Jonathan Reynolds names Professor Christopher Smith as preferred candidate for Executive Chair of Research England and Global Partnerships. AHRC Research England UKRI (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-preferred-candidate-named-for-research-england-36746fc7`
-
-## 24. SPARC welcomes Katya Mueller as Visiting Program Officer for Open Education
-
-**SPARC** — new · North America · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-09 · Recorded: 2026-11-20
-
-Sources: [SPARC](https://sparcopen.org/news/2026/sparc-welcomes-katya-mueller-as-visiting-program-officer-for-open-education/) (primary)
-
-**What changed:** Pending editorial review. SPARC title: "SPARC welcomes Katya Mueller as Visiting Program Officer for Open Education". The post SPARC welcomes Katya Mueller as Visiting Program Officer for Open Education appeared first on SPARC . (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from SPARC not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-sparc-welcomes-katya-mueller-as-visiting-d889b567`
-
-## 25. STFC software reveals how spinal discs respond to pressure
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-20 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/stfc-software-reveals-how-spinal-discs-respond-to-pressure/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "STFC software reveals how spinal discs respond to pressure". Software has helped researchers turn complex 3D X-ray images into precise measurements. STFC UKRI (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-stfc-software-reveals-how-spinal-discs-be5ec58e`
-
-## 26. UKRI invests in 20 Turing AI Fellows to strengthen UK capability
-
-**UK Research and Innovation (UKRI)** — new · Europe · topics: oa-policy · announcement · unverified
-
-Published: 2026-11-16 · Recorded: 2026-11-20
-
-Sources: [UK Research and Innovation (UKRI)](https://www.ukri.org/news/ukri-invests-in-20-turing-ai-fellows-to-strengthen-uk-capability/) (primary)
-
-**What changed:** Pending editorial review. UK Research and Innovation (UKRI) title: "UKRI invests in 20 Turing AI Fellows to strengthen UK capability". New UKRI-funded Turing AI Fellows will support breakthroughs ranging from personalised medicine to clean energy and nuclear safety. EPSRC UKRI (Auto-stub; verify against the source before publishing.)
-
-**Why it matters:** Pending editorial review. Editorial relevance from UK Research and Innovation (UKRI) not yet assessed. (Auto-stub; a human editor must write "Why it matters" grounded only in the source.)
-
-Event ID: `evt-ukri-invests-in-20-turing-ai-835350f5`
 
 ## Run report (2026-W47)
 

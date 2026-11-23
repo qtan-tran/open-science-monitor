@@ -10,7 +10,7 @@
     "updated": null
   },
   "doc_type": "announcement",
-  "editorial_status": "pending",
+  "editorial_status": "edited",
   "id": "evt-prereview-roundtable-beyond-visibility-how-do-6caebb56",
   "merged_from": [],
   "org_type": "initiative",
@@ -32,7 +32,7 @@
   "topics": [
     "research-assessment"
   ],
-  "verified": false,
-  "what_changed": "Pending editorial review. DORA (San Francisco Declaration on Research Assessment) title: \"PREreview Roundtable “Beyond Visibility: How Do We Make Peer Review Truly Valued?”\". The post PREreview Roundtable “Beyond Visibility: How Do We Make Peer Review Truly Valued?” appeared first on DORA . (Auto-stub; verify against the source before publishing.)",
-  "why_it_matters": "Pending editorial review. Editorial relevance from DORA (San Francisco Declaration on Research Assessment) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+  "verified": true,
+  "what_changed": "DORA and PREreview hosted an online roundtable (7 October, 39 participants) on valuing peer review, gathering input for DORA's forthcoming Practical Guide. Discussion centred on recognition and reward mechanisms: financial compensation, targeted support for early-career reviewers, digital certification, and reciprocity and credit systems.",
+  "why_it_matters": "Peer review work is largely invisible and unrecognised in assessment systems, which shapes the incentives (or lack of them) for doing it and feeds a sustainability crisis; the roundtable output feeds directly into a Guide that scholarly-communication organisations will implement."
 }

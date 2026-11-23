@@ -10,7 +10,7 @@
     "updated": null
   },
   "doc_type": "announcement",
-  "editorial_status": "pending",
+  "editorial_status": "edited",
   "id": "evt-asapbio-november-community-call-informing-dora-879fcc96",
   "merged_from": [],
   "org_type": "initiative",
@@ -32,7 +32,7 @@
   "topics": [
     "research-assessment"
   ],
-  "verified": false,
-  "what_changed": "Pending editorial review. DORA (San Francisco Declaration on Research Assessment) title: \"ASAPbio November Community Call: Informing DORA’s “Practical Guide for Scholarly Communication”\". The post ASAPbio November Community Call: Informing DORA’s “Practical Guide for Scholarly Communication” appeared first on DORA . (Auto-stub; verify against the source before publishing.)",
-  "why_it_matters": "Pending editorial review. Editorial relevance from DORA (San Francisco Declaration on Research Assessment) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+  "verified": true,
+  "what_changed": "DORA, ASAPbio and openRxiv co-hosted a community call (5 November) previewing DORA's forthcoming \"Practical Guide to Implementing Responsible Research Assessment in Scholarly Communication\" and asking the community to help shape it. openRxiv presented trust-signal features (open reviews, data and code availability) that preprint servers can offer for responsible assessment.",
+  "why_it_matters": "The Guide follows DORA's 2025 research-organisation and 2026 funder guides and targets publishers, repositories, libraries and infrastructure providers; community input at this stage decides how practical it becomes, and preprint platforms are the live testing ground for assessment features."
 }

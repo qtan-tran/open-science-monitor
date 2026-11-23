@@ -10,13 +10,13 @@
     "updated": null
   },
   "doc_type": "announcement",
-  "editorial_status": "pending",
+  "editorial_status": "edited",
   "id": "evt-research-data-management-training-at-the-e44db1f2",
   "merged_from": [],
   "org_type": "library-association",
   "organization": "EIFL (Electronic Information for Libraries)",
   "policy_id": null,
-  "region": "Global",
+  "region": "Europe",
   "slug": "research-data-management-training-at-the-e44db1f2",
   "sources": [
     {
@@ -32,7 +32,7 @@
   "topics": [
     "research-data"
   ],
-  "verified": false,
-  "what_changed": "Pending editorial review. EIFL (Electronic Information for Libraries) title: \"Research data management training at the National University of Kyiv-Mohyla Academy in Ukraine\". EIFL’s Open Access Programme Manager, Iryna Kuchma will facilitate the Research data management training for researchers from the National University of Kyiv-Mohyla Academy in Ukraine. (Auto-stub; verify against the source before publishing.)",
-  "why_it_matters": "Pending editorial review. Editorial relevance from EIFL (Electronic Information for Libraries) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+  "verified": true,
+  "what_changed": "EIFL's Open Access Programme Manager, Iryna Kuchma, will facilitate a research data management training for researchers at the National University of Kyiv-Mohyla Academy in Ukraine (9 December 2026, online), building research data management capacity at a Ukrainian university.",
+  "why_it_matters": "Research data management skills are a prerequisite for open data sharing and reuse; the training is part of EIFL's ongoing Open Access Programme work in Ukraine, turning national open-data ambitions into practical skills."
 }

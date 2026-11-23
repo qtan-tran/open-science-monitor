@@ -9,8 +9,8 @@
     "published": "2026-11-11",
     "updated": null
   },
-  "doc_type": "announcement",
-  "editorial_status": "pending",
+  "doc_type": "materials",
+  "editorial_status": "edited",
   "id": "evt-financial-sustainability-planning-toolkit-for-diamond-c18182f2",
   "merged_from": [],
   "org_type": "library-association",
@@ -32,7 +32,7 @@
   "topics": [
     "diamond-oa"
   ],
-  "verified": false,
-  "what_changed": "Pending editorial review. EIFL (Electronic Information for Libraries) title: \"Financial sustainability planning toolkit for Diamond OA journals\". We are pleased to announce the publication of the Financial sustainability planning toolkit for Diamond OA journals, a set of three complementary resources to help editorial teams plan the finances of Diamond Open Access (OA) journals. Diamond OA journals do not charge fees for… (Auto-stub; verify against the source before publishing.)",
-  "why_it_matters": "Pending editorial review. Editorial relevance from EIFL (Electronic Information for Libraries) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+  "verified": true,
+  "what_changed": "EIFL published a Financial sustainability planning toolkit for Diamond OA journals: three complementary resources that help editorial teams turn good practice into a complete, credible three-year sustainability plan for parent institutions and funders.",
+  "why_it_matters": "Diamond OA journals charge neither authors nor readers, so financial sustainability is their structural weak point; practical planning resources are what funders and institutions ask for before committing support."
 }

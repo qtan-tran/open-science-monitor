@@ -10,13 +10,13 @@
     "updated": null
   },
   "doc_type": "consultation",
-  "editorial_status": "pending",
+  "editorial_status": "edited",
   "id": "evt-the-way-forward-for-copyright-research-00972a86",
   "merged_from": [],
   "org_type": "library-association",
   "organization": "EIFL (Electronic Information for Libraries)",
   "policy_id": null,
-  "region": "Global",
+  "region": "Europe",
   "slug": "the-way-forward-for-copyright-research-00972a86",
   "sources": [
     {
@@ -30,9 +30,10 @@
   "supersedes": null,
   "title": "The way forward for copyright, research and AI in Europe",
   "topics": [
-    "consultations"
+    "consultations",
+    "licensing"
   ],
-  "verified": false,
-  "what_changed": "Pending editorial review. EIFL (Electronic Information for Libraries) title: \"The way forward for copyright, research and AI in Europe\". The European Commission is considering targeted changes to the EU’s copyright framework to facilitate research and innovation and enhance the resilience and competitiveness of Europe’s cultural and creative sectors. EIFL’s response to the targeted consultation focused on two are… (Auto-stub; verify against the source before publishing.)",
-  "why_it_matters": "Pending editorial review. Editorial relevance from EIFL (Electronic Information for Libraries) not yet assessed. (Auto-stub; a human editor must write \"Why it matters\" grounded only in the source.)"
+  "verified": true,
+  "what_changed": "EIFL responded to the European Commission's targeted consultation on the EU copyright framework, asking for clarification of copyright rules for research and generative AI, transparency obligations for AI providers, and an EU-wide right of secondary publication for researchers.",
+  "why_it_matters": "A secondary publication right would give researchers a legal basis to make their work open regardless of publisher contracts, and the AI rules will shape text-and-data-mining for research across the EU. This is an open-access policy question, not only a copyright one."
 }
